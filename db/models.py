@@ -1,8 +1,10 @@
 import aiosqlite
 from db import (
-    execute_select_query, get_row_by_condition, delete_from_db,
-    update_value    
+    get_row_by_condition, delete_from_db,
+    update_value, get_all_if
 )
+from keyboards import start_inl_kbs
+from aiogram.types import Message
 
 #     unic_kod INT,
 #     tg_user_id INT,
@@ -10,23 +12,15 @@ from db import (
 #     count_b INT,
 #     comment MEDIUMTEXT,
 #     unic_kod_strtsi INT
-
-class User:
-    tg_user_id = -1, count_b = -1 ,comment = "", unic_kod_strtsi = -1
-    unic_kod = -1, name = -1
-    def __init__(
-            self, unic_kod: int|None, tg_user_id: int|None, name: str| None,
-            count_b: int, comment: str, unic_kod_strtsi: int
-     ):
-        self.unic_kod = unic_kod    
+class BaseUser():
+    def __init__(self, unic_kod: int=-1, tg_user_id: int=-1, name: str=""):
+        self.unic_kod = unic_kod
         self.tg_user_id = tg_user_id
-        self.name = name                                                                                                                    
-        self.count_b = count_b
-        self.comment= comment
-        self.unic_kod_strtsi = unic_kod_strtsi
-
-    @classmethod        
-    async def set_other_atributs (cls, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
+        self.name = name
+        if self.__class__.__name__ == "User": self.table = "Just_users"
+        if self.__class__.__name__ == "Starosta": self.table = "Starst"
+    
+    async def get_atributs (self, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
         params ={
             "unic_kod": unic_kod,
             "tg_user_id": tg_user_id, 
@@ -35,21 +29,66 @@ class User:
         for key, item in params.items() :
             if key != None:                 
                 user =await get_row_by_condition(
-                    table="Just_users",
+                    table=self.table,
                     condition_column=f"{key}",
                     condition_value= item
                 )    
-                return cls(
-                    user[0], user[1], user[2],
-                    user[3], user[4], user[5]
-                )
+                return user
 
+    #             
+    async def say_my_name (self, message: Message):
+        cur_name = self.name
+        text = f"Здравствуйте,{cur_name}. \nВот меню действий:"
+        inl_kb = start_inl_kbs()
+        # для простого юзера
+        if self.table == "User":     cur_markup = inl_kb.user_markup()
+        # Для старосты
+        if self.table == "Starosta": cur_markup = inl_kb.star_markup()
+        
+        await message.answer(
+            text=text,
+            reply_markup=cur_markup
+        )
+    # Функция полного удаления какого-либо пользователя
     async def del_me(self):
         await delete_from_db(
-            table="Just_users",
+            table=self.table,
             condition_column="unic_kod",
             condition_value=self.unic_kod
         )
+    # Функция очистки tg_id
+    async def clear_tg_id (self):
+        await update_value(
+            table = "Starst", column="tg_user_id",
+            value=-1, condition_column="unic_kod",
+            condition_value=self.unic_kod
+        )
+    
+
+# класс для студента        
+class User(BaseUser):
+    def __init__(
+            self, unic_kod: int=-1, tg_user_id: int=-1, name: str="",
+            count_b: int=-1, comment: str="", unic_kod_strtsi: int=-1
+     ):
+        self.unic_kod = unic_kod    
+        self.tg_user_id = tg_user_id
+        self.name = name                                                                                                                    
+        self.count_b = count_b
+        self.comment= comment
+        self.unic_kod_strtsi = unic_kod_strtsi
+        
+    @classmethod        
+    async def set_other_atributs (cls, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
+        user = await BaseUser.get_atributs(
+            unic_kod=unic_kod,
+            name= name, tg_user_id=tg_user_id
+        )
+        return cls(
+            user[0], user[1], user[2],
+            user[3], user[4], user[5]
+        )
+
     async def set_comment (self, new_com: str):
         await update_value(
             table="Just_users", column="comment",
@@ -69,21 +108,38 @@ class User:
             condition_value=self.unic_kod
         )
 
-class Post:
-    def __init__(self, post_id: int, user_id: int, content: str):
-        self.post_id = post_id
-        self.user_id = user_id
-        self.content = content
+    # unic_kod INT,
+    # tg_user_id INT,
+    # name TEXT,
+    # place TEXT 
+class Starosta(BaseUser):
+    def __init__(self, unic_kod: int=-1, tg_user_id: int=-1, name: str="", place:str=""):
+        self.unic_kod = unic_kod
+        self.tg_user_id = tg_user_id
+        self.name = name
+        self.place = place        
 
-    async def save(self):
-        query = "INSERT INTO posts (user_id, content) VALUES (?, ?)"
-        params = (self.user_id, self.content)
-        await execute_select_query(query, params)
-
-    @classmethod
-    async def get_by_id(cls, post_id: int):
-        query = "SELECT * FROM posts WHERE id = ?"
-        params = (post_id,)
-        result = await execute_select_query(query, params)
-        if result:
-            return cls(*result[0])  # Предполагается, что результат содержит все поля
+    @classmethod        
+    async def set_other_atributs (cls, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
+        user = await BaseUser.get_atributs(
+            unic_kod=unic_kod,
+            name= name, tg_user_id=tg_user_id
+        )
+        return cls(
+            user[0], user[1], 
+            user[2], user[3]
+        )
+    
+    async def my_students (self):
+        my_students = await get_all_if(
+            table = "Just_users", column= "name",
+            condition_column="unic_kod_strtsi",
+            condition_value=self.unic_kod
+        )
+    async def fool_del(self):
+        await delete_from_db(
+            table="Just_users",
+            condition_column="unic_kod_strtsi",
+            condition_value=self.unic_kod
+        )
+        await self.del_me()

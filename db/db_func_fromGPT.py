@@ -1,10 +1,8 @@
 import aiosqlite
 from random import randint
 import traceback
+from config import get_db_connection
 
-# Получение подключения к базе данных
-def get_db_connection():
-    return "path_to_your_database.db"
 
 # Универсальная функция выполнения SELECT-запросов
 async def execute_select_query(query: str, params: tuple = ()):
@@ -29,7 +27,7 @@ async def get_all(table: str, column: str):
     return [row[0] for row in rows]
 
 # Получение значений по условию
-async def get_all_if(table: str, column: str, condition_column: str, condition_value: str):
+async def get_all_if(table: str, column: str, condition_column: str, condition_value: str) ->list:
     query = f"SELECT {column} FROM {table} WHERE {condition_column} = ?"
     rows = await execute_select_query(query, (condition_value,))
     return [row[0] for row in rows]

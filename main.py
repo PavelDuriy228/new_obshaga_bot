@@ -6,14 +6,16 @@ import asyncio
 import traceback
 from config import dp, bot, user_id_adm
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from handlers import gen_router
 
+dp.include_router(gen_router)
 
 async def main(message: types.Message = None):
     try:
         # Благодаря этому в консоли появлятся вся информации о работе тг бота
         logging.basicConfig(level=logging.INFO)
         # Назначение выполнение функции чтения данных с таблицы
-        scheduler = AsyncIOScheduler()
+        # scheduler = AsyncIOScheduler()
         # scheduler.add_job(reader, 'cron', hour=23, minute =30)
         # scheduler.start()
         # if scheduler:
