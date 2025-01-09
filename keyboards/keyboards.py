@@ -6,10 +6,11 @@ async def kb_srsts ():
         table="Starst",
         column="name"
     )
+    if len(starosts)==0:
+        return ReplyKeyboardMarkup(resize_keyboard=True)
     keyboard = []
-    for i in range(len(starosts)):
-        st_in_button = f"{starosts[i]}"
-        keyboard.append([KeyboardButton(text=f"{st_in_button}")])
+    for st in starosts:        
+        keyboard.append([KeyboardButton(text=f"{st}")])
 
     markup = ReplyKeyboardMarkup(
         keyboard= keyboard,

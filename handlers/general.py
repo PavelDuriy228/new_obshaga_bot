@@ -17,7 +17,7 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
     cur_user_id = message.from_user.id
     # Очистка всех Машин состояний
     await state.clear()
-    await message.answer("Этот бот создан для учета баллов в общежитии")
+    await message.answer("Этот бот создан для учета баллов в общежитии", reply_markup= types.ReplyKeyboardRemove())
 
     if not ( unic_code  is None ):
         # Перевод в int command.args

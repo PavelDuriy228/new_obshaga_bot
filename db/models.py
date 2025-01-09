@@ -16,9 +16,7 @@ class BaseUser():
     def __init__(self, unic_kod: int=-1, tg_user_id: int=-1, name: str=""):
         self.unic_kod = unic_kod
         self.tg_user_id = tg_user_id
-        self.name = name
-        if self.__class__.__name__ == "User": self.table = "Just_users"
-        if self.__class__.__name__ == "Starosta": self.table = "Starst"
+        self.name = name        
     
     async def get_atributs (self, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
         params ={
@@ -26,14 +24,18 @@ class BaseUser():
             "tg_user_id": tg_user_id, 
             "name": name
         }
+        if self.__class__.__name__ == "User": self.table = "Just_users"
+        if self.__class__.__name__ == "Starosta": self.table = "Starst"
         for key, item in params.items() :
-            if key != None:                 
+            print(f"key{key}, item:{item}")
+            if item != None:                 
                 user =await get_row_by_condition(
                     table=self.table,
                     condition_column=f"{key}",
                     condition_value= item
                 )    
                 return user
+        return None
 
     #             
     async def say_my_name (self, message: Message):
@@ -63,6 +65,13 @@ class BaseUser():
             value=-1, condition_column="unic_kod",
             condition_value=self.unic_kod
         )
+    async def reset_user(self, new_name):
+        await self.clear_tg_id()
+        await update_value(
+            table = "Starst", column="name",
+            value=new_name, condition_column="unic_kod",
+            condition_value=self.unic_kod
+        )
     
 
 # класс для студента        
@@ -77,14 +86,13 @@ class User(BaseUser):
         self.count_b = count_b
         self.comment= comment
         self.unic_kod_strtsi = unic_kod_strtsi
-        
-    @classmethod        
-    async def set_other_atributs (cls, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
-        user = await BaseUser.get_atributs(
+            
+    async def set_other_atributs (self, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
+        user = await self.get_atributs(
             unic_kod=unic_kod,
             name= name, tg_user_id=tg_user_id
         )
-        return cls(
+        return self.__init__(
             user[0], user[1], user[2],
             user[3], user[4], user[5]
         )
@@ -119,13 +127,18 @@ class Starosta(BaseUser):
         self.name = name
         self.place = place        
 
-    @classmethod        
-    async def set_other_atributs (cls, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
-        user = await BaseUser.get_atributs(
+     
+    async def set_other_atributs (self, unic_kod: int|None, name: str| None, tg_user_id: int|None ):
+        #instance = self(unic_kod=unic_kod, name=name, tg_user_id=tg_user_id)
+
+        user = await self.get_atributs(            
             unic_kod=unic_kod,
-            name= name, tg_user_id=tg_user_id
+            name= name, 
+            tg_user_id=tg_user_id
         )
-        return cls(
+        print(self.table)
+        print(user)
+        return self.__init__(
             user[0], user[1], 
             user[2], user[3]
         )

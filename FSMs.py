@@ -5,6 +5,7 @@ class StateName(StatesGroup):
 
 class ForEditStName (StatesGroup):
     for_edit_name = State()
+    new_name = State()
     
 class ForDelStName (StatesGroup):
     for_del_name = State()

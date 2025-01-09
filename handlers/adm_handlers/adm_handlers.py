@@ -4,7 +4,7 @@ from aiogram.fsm.context import FSMContext  # Импортируйте FSMContex
 from db import (
     create_code, create_new_user
 )
-from keyboards import adm_menu_markup
+from keyboards import adm_menu_markup, home_admin
 from FSMs import StateName
 from other_func import checking_starst
 
@@ -12,7 +12,7 @@ router = Router()
 
 @router.callback_query(lambda c: c.data == "adm_menu")
 async def adm_menu(call_qu: types.CallbackQuery, state: FSMContext):
-    state.clear()
+    await state.clear()
     await call_qu.message.edit_text(
         "Меню кнопок админа", reply_markup= adm_menu_markup
     )
@@ -36,13 +36,14 @@ async def add_new_starst1 (message: types.Message, state: FSMContext):
         )
         await create_new_user(
             code=code, table="Starst", place=text.split(":")[1],
-            name = text.split(":")[0]
+            name = text
         )
         await message.answer(
-            "Ниже будет ссылка для вашего старосты. Перейдя по ней он автоматически авторизуется в системе"            
+            "Ниже будет ссылка для вашего старосты. Перейдя по ней он автоматически авторизуется в системе",
+            reply_markup= home_admin
         )
         await message.answer(f"https://t.me/{username_bota}?start={code}")
         await state.clear()
     
     else: 
-        await message.answer("Что то не так, попробуйте ещё раз")
+        await message.answer("Что то не так, попробуйте ещё раз",reply_markup= home_admin)
