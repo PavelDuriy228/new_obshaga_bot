@@ -33,7 +33,7 @@ class start_inl_kbs():
     
     async def home_star(self)-> InlineKeyboardMarkup:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton("В меню", callback_data=f"star_home_page:{self.unic_code}")]
+            [InlineKeyboardButton(text="В меню", callback_data=f"star_home_page:{self.unic_code}")]
         ])        
         return keyboard
     

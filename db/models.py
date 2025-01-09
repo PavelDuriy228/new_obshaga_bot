@@ -1,4 +1,3 @@
-import aiosqlite
 from db import (
     get_row_by_condition, delete_from_db,
     update_value, get_all_if
@@ -40,7 +39,7 @@ class BaseUser():
     #             
     async def say_my_name (self, message: Message):
         cur_name = self.name
-        text = f"Здравствуйте,{cur_name}. \nВот меню действий:"
+        text = f"Здравствуйте, {cur_name}. \nВот меню действий:"
         inl_kb = start_inl_kbs(unic_code=self.unic_kod)
         # для простого юзера
         if self.table == "Just_users":     cur_markup = await inl_kb.user_markup()

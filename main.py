@@ -15,6 +15,7 @@ dp.include_router(gen_adm_router)
 dp.include_router(edit_strst_routers)
 dp.include_router(gen_star_router)
 dp.include_router(star_router2)
+dp.include_router(statistik_router)
 
 async def main(message: types.Message = None):
     try:

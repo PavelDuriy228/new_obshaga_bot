@@ -17,3 +17,7 @@ edit_strst = InlineKeyboardMarkup(inline_keyboard=[
 home_admin = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="Домой", callback_data="adm_menu")]
 ])
+
+total_statistik = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Топ студентов", callback_data="full_statik:0")]
+])

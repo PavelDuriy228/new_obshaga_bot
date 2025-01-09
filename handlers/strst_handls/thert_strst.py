@@ -1,13 +1,11 @@
-from aiogram import types, Router
+from aiogram import Router
 from config import username_bota
-from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from db import (
-    update_value
+    update_value, get_rows_by_condition
 )
-from keyboards import start_inl_kbs, home_admin
-from FSMs import StateName
-from other_func import checking_starst
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
+from keyboards import   total_statistik, start_inl_kbs
+from other_func import sort_list0
+from aiogram.types import  CallbackQuery
 
 router = Router()
 
@@ -26,3 +24,23 @@ async def star_home_page (callback: CallbackQuery):
     )
     await callback.message.answer(f"Теперь этот студент не сможет пользоваться ботом. Отправьте эту ссылку новому пользоваелю")
     await callback.message.answer(f"https://t.me/{username_bota}?start={unic_code}")
+
+@router.callback_query(lambda c: c.data.startswith("st_statistik:"))
+async def star_statistika (callback: CallbackQuery):    
+    unic_code = callback.data.split(":")[1]
+    users = await get_rows_by_condition(
+        table="Just_users", condition_column="unic_kod_strtsi",
+        condition_value=unic_code
+    )
+    print(f'\nusers\n{users}\n')
+    text = await sort_list0(users=users)
+    markup = start_inl_kbs(unic_code=unic_code)    
+    n_markup = await markup.home_star()
+    await callback.message.edit_text(
+        text = text,
+        reply_markup=n_markup
+    )
+    await callback.message.answer(
+        text="Нажмите, чтобы посмотреть полную статистику",
+        reply_markup=total_statistik
+    )

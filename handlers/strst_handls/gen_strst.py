@@ -1,12 +1,9 @@
-from aiogram import types, Router
-from config import username_bota
+from aiogram import Router
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from db import (
     User, get_all_if
 )
 from keyboards import start_inl_kbs, home_admin
-from FSMs import StateName
-from other_func import checking_starst
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 router = Router()
@@ -16,15 +13,17 @@ async def star_home_page (callback: CallbackQuery, state: FSMContext):
     await state.clear()
     unic_code = callback.data[14:]
     inlens = start_inl_kbs(unic_code=unic_code)
+    mrk = await inlens.star_markup()
     await callback.message.edit_text(
         text="Выберите действие",
-        reply_markup= inlens.star_markup()
+        reply_markup= mrk
     )
 
 @router.callback_query(lambda c: c.data.startswith("my_students:"))
-async def star_students (callback: CallbackQuery, state: FSMContext):    
+async def star_students (callback: CallbackQuery):    
     cortege =callback.data.split(":") 
-    
+    cortege = [x for x in cortege if x!=""]
+    print(cortege)
     # Получение кода
     unic_code = int(cortege[1])
     # Получение страницы
@@ -81,7 +80,7 @@ async def star_students (callback: CallbackQuery, state: FSMContext):
         ])
         action = 1
 
-    print(f"Назад:{nazad}\nВперед{vper}")
+    #print(f"Назад:{nazad}\nВперед{vper}")
     if action == 0:
         keyboard.append([
             InlineKeyboardButton(text="⬅️", callback_data=f"my_students:{unic_code}:{nazad}:{page}"),
