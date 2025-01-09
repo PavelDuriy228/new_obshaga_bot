@@ -27,7 +27,7 @@ class BaseUser():
         if self.__class__.__name__ == "User": self.table = "Just_users"
         if self.__class__.__name__ == "Starosta": self.table = "Starst"
         for key, item in params.items() :
-            print(f"key{key}, item:{item}")
+            # print(f"key{key}, item:{item}")
             if item != None:                 
                 user =await get_row_by_condition(
                     table=self.table,
@@ -41,16 +41,17 @@ class BaseUser():
     async def say_my_name (self, message: Message):
         cur_name = self.name
         text = f"Здравствуйте,{cur_name}. \nВот меню действий:"
-        inl_kb = start_inl_kbs()
+        inl_kb = start_inl_kbs(unic_code=self.unic_kod)
         # для простого юзера
-        if self.table == "User":     cur_markup = inl_kb.user_markup()
+        if self.table == "Just_users":     cur_markup = await inl_kb.user_markup()
         # Для старосты
-        if self.table == "Starosta": cur_markup = inl_kb.star_markup()
+        if self.table == "Starst": cur_markup = await inl_kb.star_markup()
         
         await message.answer(
             text=text,
             reply_markup=cur_markup
         )
+
     # Функция полного удаления какого-либо пользователя
     async def del_me(self):
         await delete_from_db(
@@ -136,8 +137,8 @@ class Starosta(BaseUser):
             name= name, 
             tg_user_id=tg_user_id
         )
-        print(self.table)
-        print(user)
+        # print(self.table)
+        # print(user)
         return self.__init__(
             user[0], user[1], 
             user[2], user[3]

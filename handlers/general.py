@@ -28,12 +28,13 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
             cur_user_id=cur_user_id, 
             unic_code=unic_code
         )
+        print(nalich)
         if nalich: await message.answer("Ваш id добавлен в БД. Теперь вам не нужна специальная ссылка")
         else: await message.answer("Неверный код старта")
     
     cur_user = await chosing_role(cur_tg_id=cur_user_id)
     if not (cur_user is None):
         # Приветственное сообщение с менюшкой
-        cur_user.say_my_name(message=message)
+        await cur_user.say_my_name(message=message)
     if cur_user_id == user_id_adm:
         await message.answer("Здравствуйте, администратор", reply_markup=adm_menu_markup)

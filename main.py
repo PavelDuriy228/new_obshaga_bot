@@ -8,10 +8,13 @@ from config import dp, bot, user_id_adm
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 # Роутеры 
 from handlers import *
+
 # Включение ввсех роутеров
 dp.include_router(gen_router)
 dp.include_router(gen_adm_router)
 dp.include_router(edit_strst_routers)
+dp.include_router(gen_star_router)
+dp.include_router(star_router2)
 
 async def main(message: types.Message = None):
     try:
