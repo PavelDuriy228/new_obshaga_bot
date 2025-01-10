@@ -2,7 +2,6 @@ from db import (
     exists_in_db, update_user_id, get_all
 )
 from db import User, Starosta
-from aiogram.types import Message
 
 async def set_id_new_user(cur_user_id:int,  unic_code:int):
     for table in ["Just_users", "Starst"]:

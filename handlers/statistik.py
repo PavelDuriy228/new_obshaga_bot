@@ -3,7 +3,6 @@ from db import (
     get_rows_for_statik
 )
 from other_func import sort_list0
-from keyboards import adm_menu_markup
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 router= Router ()

@@ -1,7 +1,4 @@
 import re
-from db import (
-    get_all
-)
 
 # Проверка нового старосты по маске
 async def checking_starst (text:str) -> bool:

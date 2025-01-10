@@ -1,9 +1,9 @@
 from aiogram import Router
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from db import (
-    User, get_all_if, Starosta
+    User, get_all_if
 )
-from keyboards import start_inl_kbs, home_admin
+from keyboards import start_inl_kbs
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 router = Router()
