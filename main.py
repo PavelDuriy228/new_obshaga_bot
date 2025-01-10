@@ -8,6 +8,7 @@ from config import dp, bot, user_id_adm
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 # Роутеры 
 from handlers import *
+from db import reader_gs
 
 # Включение ввсех роутеров
 dp.include_router(gen_router)
@@ -23,11 +24,11 @@ async def main(message: types.Message = None):
         # Благодаря этому в консоли появлятся вся информации о работе тг бота
         logging.basicConfig(level=logging.INFO)
         # Назначение выполнение функции чтения данных с таблицы
-        # scheduler = AsyncIOScheduler()
-        # scheduler.add_job(reader, 'cron', hour=23, minute =30)
-        # scheduler.start()
-        # if scheduler:
-        #     print ("---Задача назначена")
+        scheduler = AsyncIOScheduler()
+        scheduler.add_job(reader_gs, 'cron', hour=17, minute =28)
+        scheduler.start()
+        if scheduler:
+            print ("---Задача назначена")
 
         # Этим мы опрашиваем тг на наличие уведомлений
         await dp.start_polling(bot)

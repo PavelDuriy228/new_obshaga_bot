@@ -36,8 +36,8 @@ async def add_new_starst1 (message: Message, state: FSMContext):
             end=1_000_000
         )
         await create_new_user(
-            code=code, table="Starst", place=text.split(":")[1],
-            name = text
+            code=code, table="Starst", place=text.split(":")[1].strip(),
+            name = text.strip()
         )
         await message.answer(
             "Ниже будет ссылка для вашего старосты. Перейдя по ней он автоматически авторизуется в системе",

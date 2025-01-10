@@ -65,6 +65,14 @@ async def create_new_user(table: str, code: int, name: str, place: str):
     query = f"INSERT INTO {table} (unic_kod, name, place) VALUES (?, ?, ?)"
     await execute_write_query(query, (code, name, place))
 
+# Добавление нового пользователя
+async def create_new_user2(
+        code: int, name: str, count_b:int,
+        comment: str, unic_kod_strtsi: int
+):
+    query = f"INSERT INTO Just_users (unic_kod, name, count_b, comment, unic_kod_strtsi) VALUES (?, ?, ?, ?, ?)"
+    await execute_write_query(query, (code, name, count_b, comment, unic_kod_strtsi))
+
 # Проверка наличия значения в БД
 async def exists_in_db(table: str, column: str, value: str):
     query = f"SELECT {column} FROM {table}"

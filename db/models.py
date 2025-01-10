@@ -1,6 +1,6 @@
 from db import (
     get_row_by_condition, delete_from_db,
-    update_value, get_all_if
+    update_value, get_all_if, create_code, create_new_user2
 )
 from keyboards import start_inl_kbs
 from aiogram.types import Message, CallbackQuery
@@ -32,7 +32,7 @@ class BaseUser():
                     table=self.table,
                     condition_column=f"{key}",
                     condition_value= item
-                )    
+                )                    
                 return user
         return None
 
@@ -100,6 +100,8 @@ class User(BaseUser):
             unic_kod=unic_kod,
             name= name, tg_user_id=tg_user_id
         )
+        if  user is None:
+            user = [-1, -1, "", -1, "", -1]
         return self.__init__(
             user[0], user[1], user[2],
             user[3], user[4], user[5]
@@ -122,6 +124,22 @@ class User(BaseUser):
             table="Just_users", column=column,
             value=new_value, condition_column="unic_kod",
             condition_value=self.unic_kod
+        )
+    async def register_user(self, name:str, count_b: int, comment: str, unic_c_stars:int):
+        cod =await create_code(
+            table= "Just_users", start=1, end=499_999
+        )
+        return self.__init__(
+            unic_kod=cod, tg_user_id=-1, name=name,
+            count_b=count_b, comment=comment,
+            unic_kod_strtsi=unic_c_stars
+        )
+    async def add_to_db (self):
+        await create_new_user2(
+            code=self.unic_kod, name = self.name,
+            count_b=self.count_b, 
+            comment=self.comment,
+            unic_kod_strtsi=self.unic_kod_strtsi
         )
 
     # unic_kod INT,
