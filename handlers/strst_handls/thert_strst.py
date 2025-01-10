@@ -11,7 +11,7 @@ router = Router()
 
 @router.callback_query(lambda c: c.data.startswith("stud_url:"))
 async def star_home_page (callback: CallbackQuery):    
-    unic_code = callback.data[8:]
+    unic_code = callback.data.split(":")[1]
     await callback.message.answer(f"https://t.me/{username_bota}?start={unic_code}")
 
 @router.callback_query(lambda c: c.data.startswith("clear_tg_id:"))

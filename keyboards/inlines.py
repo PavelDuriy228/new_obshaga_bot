@@ -5,7 +5,8 @@ adm_menu_markup = InlineKeyboardMarkup(inline_keyboard=[
         InlineKeyboardButton(text="Добавить старосту", callback_data="adm_add_starst"), 
         InlineKeyboardButton(text="Изменение старост", callback_data="edit_starst")
     ],
-    [InlineKeyboardButton(text="📈Статистка", callback_data="adm_statistik")]
+    [InlineKeyboardButton(text="📈Статистка", callback_data="adm_statistik")],
+    [InlineKeyboardButton(text="Ссылки для старост", callback_data="stars_urls:0")]
 ])
 
 edit_strst = InlineKeyboardMarkup(inline_keyboard=[

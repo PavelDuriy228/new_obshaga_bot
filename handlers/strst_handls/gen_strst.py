@@ -1,7 +1,7 @@
 from aiogram import Router
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from db import (
-    User, get_all_if
+    User, get_all_if, Starosta
 )
 from keyboards import start_inl_kbs, home_admin
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -12,6 +12,7 @@ router = Router()
 async def star_home_page (callback: CallbackQuery, state: FSMContext):
     await state.clear()
     unic_code = callback.data[14:]
+    
     inlens = start_inl_kbs(unic_code=unic_code)
     mrk = await inlens.star_markup()
     await callback.message.edit_text(

@@ -14,15 +14,15 @@ class start_inl_kbs():
 
     async def user_markup(self) -> InlineKeyboardMarkup:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton("📈Статистка", callback_data=f"st_statistik:{self.unic_code}")]            
+            [InlineKeyboardButton(text="📈Статистка", callback_data=f"u_statistik:{self.unic_code}")]            
+        ])                
+        return keyboard
+    async def home_stud(self)-> InlineKeyboardMarkup:
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text="Домой", callback_data=f"home_stud:{self.unic_code}")]            
         ])                
         return keyboard
     
-    async def star_buttons (self):
-        button = InlineKeyboardButton("📈Статистка", callback_data=f"u_statistik:{self.unic_code}")        
-        return [
-            [button]            
-        ]
     
     async def star_markup(self) -> InlineKeyboardMarkup:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[

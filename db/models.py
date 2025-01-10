@@ -3,7 +3,7 @@ from db import (
     update_value, get_all_if
 )
 from keyboards import start_inl_kbs
-from aiogram.types import Message
+from aiogram.types import Message, CallbackQuery
 
 #     unic_kod INT,
 #     tg_user_id INT,
@@ -37,19 +37,27 @@ class BaseUser():
         return None
 
     #             
-    async def say_my_name (self, message: Message):
+    async def say_my_name (self, message: Message| CallbackQuery):
         cur_name = self.name
         text = f"Здравствуйте, {cur_name}. \nВот меню действий:"
         inl_kb = start_inl_kbs(unic_code=self.unic_kod)
         # для простого юзера
-        if self.table == "Just_users":     cur_markup = await inl_kb.user_markup()
+        if self.table == "Just_users":     
+            cur_markup = await inl_kb.user_markup()
+            text = f"Здравствуйте, {cur_name}, у вас {self.count_b} баллов. \nВот меню действий:"
         # Для старосты
         if self.table == "Starst": cur_markup = await inl_kb.star_markup()
         
-        await message.answer(
-            text=text,
-            reply_markup=cur_markup
-        )
+        if isinstance(message, Message):
+            await message.answer(
+                text=text,
+                reply_markup=cur_markup
+            )
+        if isinstance(message, CallbackQuery):
+            await message.message.edit_text(
+                text=text,
+                reply_markup=cur_markup
+            )
 
     # Функция полного удаления какого-либо пользователя
     async def del_me(self):
