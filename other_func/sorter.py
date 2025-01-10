@@ -2,9 +2,9 @@ async def sort_list0 (users):
     worder_users ={}
     #print(users)
     for user in users:
-        worder_users[user[0]] = user[1]
+        worder_users[user[0]] = int(user[1])    
     # Сортировка словаря по значениям
-    sorted_worder_users = dict(sorted(worder_users.items(), key=lambda item: item[1]))
+    sorted_worder_users = dict(sorted(worder_users.items(), key=lambda item: item[1], reverse=True))    
     # Вывод отсортированного словаря
     # print(sorted_worder_users)
     text = ''
