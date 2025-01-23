@@ -1,9 +1,9 @@
 from aiogram import types, Router
-from config import user_id_adm
+from config import user_id_adm, user_id_eventor
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from .sup_func import set_id_new_user, chosing_role
-from keyboards import adm_menu_markup
+from keyboards import adm_menu_markup, eventor_markup, total_statistik
 
 router = Router()
 
@@ -15,6 +15,7 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
     # Очистка всех Машин состояний
     await state.clear()
     await message.answer("Этот бот создан для учета баллов в общежитии", reply_markup= types.ReplyKeyboardRemove())
+    await message.answer("Нажмите на эту кнопку, чтобы посмотреть полную статистике по общежитию", reply_markup=total_statistik)
 
     if not ( unic_code  is None ):
         # Перевод в int command.args
@@ -33,5 +34,8 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
     if not (cur_user is None):
         # Приветственное сообщение с менюшкой
         await cur_user.say_my_name(message=message)
-    if cur_user_id == user_id_adm:
+    if str(cur_user_id) == user_id_adm:
         await message.answer("Здравствуйте, администратор", reply_markup=adm_menu_markup)
+
+    if str(cur_user_id) == user_id_eventor:        
+        await message.answer(text="Здравствуйте, создатель мероприятий", reply_markup= eventor_markup)

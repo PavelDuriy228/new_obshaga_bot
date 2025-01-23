@@ -48,8 +48,8 @@ async def star_students (callback: CallbackQuery):
 
     keyboard = []    
     keyboard.append([
-        InlineKeyboardButton(text="Получить его ссылку", callback_data=f'stud_url:{user.unic_kod}'),    
-        InlineKeyboardButton(text="Очистить ячейку", callback_data=f"clear_tg_id:{user.unic_kod}")
+        InlineKeyboardButton(text="⬇️Получить его ссылку", callback_data=f'stud_url:{user.unic_kod}'),    
+        InlineKeyboardButton(text="🔄Очистить ячейку", callback_data=f"clear_tg_id:{user.unic_kod}")
     ])
     
     for page2 in range(page, page+6, 2):
@@ -66,18 +66,18 @@ async def star_students (callback: CallbackQuery):
             break
         
     action = 0
-    nazad = page-4 
+    nazad = page-6
     if nazad<0:
         nazad =0
         keyboard.append([
-            InlineKeyboardButton(text="➡️", callback_data=f"my_students:{unic_code}:{page+4}:{page}")    
+            InlineKeyboardButton(text="➡️", callback_data=f"my_students:{unic_code}:{page+6}:{page}")    
         ])
         action = 1
-    vper = page +4
+    vper = page +6
     if vper > len(studnts):
         vper = page
         keyboard.append([
-            InlineKeyboardButton(text="⬅️", callback_data=f"my_students:{unic_code}:{page-4}:{page}")
+            InlineKeyboardButton(text="⬅️", callback_data=f"my_students:{unic_code}:{page-6}:{page}")
         ])
         action = 1
 

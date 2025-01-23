@@ -1,9 +1,6 @@
 from aiogram import  Router
-from config import user_id_adm
-from aiogram.filters import CommandStart
-from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from keyboards import total_statistik, start_inl_kbs
-from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import CallbackQuery
 from db import get_row_by_condition, User
 
 router = Router()

@@ -9,3 +9,25 @@ class ForEditStName (StatesGroup):
     
 class ForDelStName (StatesGroup):
     for_del_name = State()
+
+class NewEvent(StatesGroup):
+    name = State ()
+    description = State ()
+    date = State()
+
+class ForEditTime(StatesGroup):
+    id = State()
+    new_time = State()
+
+class RebuildEvent(StatesGroup):
+    id = State()
+    new_name = State()
+    new_discription = State()
+    new_time  = State()
+
+class MesToFolls(StatesGroup):
+    id = State()
+    mes = State()
+
+class SearchName(StatesGroup):
+    name = State()

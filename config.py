@@ -24,7 +24,8 @@ bot = Bot(token = Bot_token)
 storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 
-user_id_adm = 1413674444
+user_id_adm = os.getenv('user_id_adm')
+user_id_eventor = os.getenv('user_id_eventor')
 username_bota = os.getenv('name_test')
 
 current_dir= os.path.dirname(os.path.abspath(__file__))
@@ -49,6 +50,19 @@ CREATE TABLE IF NOT EXISTS Just_users (
     name TEXT,
     count_b INT,
     comment MEDIUMTEXT,
-    unic_kod_strtsi INT
+    unic_kod_strtsi INT,
+    code_events MEDIUMTEXT
+)
+''')
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS Events (
+    unic_kod INT,
+    event_name TEXT,
+    even_desription MEDIUMTEXT,               
+    event_date DATE,
+    event_time TIME,
+    joined_users_id MEDIUMTEXT,
+    joined_users_username MEDIUMTEXT,
+    status TEXT      
 )
 ''')

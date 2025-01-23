@@ -112,3 +112,7 @@ async def get_row_by_condition(table: str, condition_column: str, condition_valu
 async def delete_from_db(table: str, condition_column: str, condition_value: str):
     query = f"DELETE FROM {table} WHERE {condition_column} = ?"
     await execute_write_query(query, (condition_value,))
+
+async def update_value_w_symbol(table:str,column:str, value, condition_column: str, condition_value: str ):
+    query = f"UPDATE {table} SET {column} = {column} || ' ' || ? WHERE {condition_column} = ?"
+    await execute_write_query(query, (str(value), condition_value))

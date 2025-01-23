@@ -1,6 +1,5 @@
 from typing import Any
 from aiogram import types
-from aiogram.filters import CommandStart
 import logging
 import asyncio
 import traceback
@@ -9,27 +8,39 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 # Роутеры 
 from handlers import *
 from db import reader_gs
+from logging_hand import loging_router
 
 # Включение ввсех роутеров
-dp.include_router(gen_router)
-dp.include_router(gen_adm_router)
-dp.include_router(edit_strst_routers)
-dp.include_router(gen_star_router)
-dp.include_router(star_router2)
-dp.include_router(statistik_router)
-dp.include_router(gen_user_router)
+routers = [
+    gen_router, gen_adm_router, edit_strst_routers, gen_star_router, star_router2,
+    statistik_router, gen_user_router, loging_router, gen_event_rt, funcs_event_rt,
+    events_rt, event_user_router
+]
+
+for cur_router in routers:
+    dp.include_router(cur_router)
+
 
 async def main(message: types.Message = None):
     try:
         # Благодаря этому в консоли появлятся вся информации о работе тг бота
         logging.basicConfig(level=logging.INFO)
+        # Настройка конфигурации логирования
+        
+#________ Логгирование в спец файл
+        # logging.basicConfig(
+        #     filename='app.log',  # Имя файла для записи логов
+        #     level=logging.DEBUG,  # Уровень логирования (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+        #     format='%(asctime)s - %(levelname)s - %(message)s'  # Формат сообщений
+        # )
         # Назначение выполнение функции чтения данных с таблицы
         scheduler = AsyncIOScheduler()
-        scheduler.add_job(reader_gs, 'cron', hour=17, minute =28)
+        scheduler.add_job(reader_gs, 'cron', hour=14, minute =15)
         scheduler.start()
         if scheduler:
             print ("---Задача назначена")
 
+        logging.info("____Бот начал работу___")
         # Этим мы опрашиваем тг на наличие уведомлений
         await dp.start_polling(bot)
         
