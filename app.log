@@ -1,0 +1,921 @@
+2025-01-11 11:46:34,673 - DEBUG - Using proactor: IocpProactor
+2025-01-11 11:46:34,678 - DEBUG - Looking up time zone info from registry
+2025-01-11 11:46:34,689 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 11:46:34,689 - INFO - Added job "reader" to job store "default"
+2025-01-11 11:46:34,689 - INFO - Scheduler started
+2025-01-11 11:46:34,689 - INFO - ____Бот начал работу___
+2025-01-11 11:46:34,689 - INFO - Start polling
+2025-01-11 11:46:34,689 - DEBUG - Looking for jobs to run
+2025-01-11 11:46:34,689 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 20485.310650 seconds)
+2025-01-11 11:46:35,204 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 11:47:31,323 - DEBUG - executing <function connect.<locals>.connector at 0x000001B5431DCD60>
+2025-01-11 11:47:31,324 - DEBUG - operation <function connect.<locals>.connector at 0x000001B5431DCD60> completed
+2025-01-11 11:47:31,325 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001B54A38A200>, 'SELECT tg_user_id FROM Just_users', ())
+2025-01-11 11:47:31,327 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001B54A38A200>, 'SELECT tg_user_id FROM Just_users', ()) completed
+2025-01-11 11:47:31,327 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B543E824C0>)
+2025-01-11 11:47:31,327 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B543E824C0>) completed
+2025-01-11 11:47:31,328 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B543E824C0>)
+2025-01-11 11:47:31,328 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B543E824C0>) completed
+2025-01-11 11:47:31,329 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001B54A38A200>)
+2025-01-11 11:47:31,329 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001B54A38A200>) completed
+2025-01-11 11:47:31,331 - DEBUG - executing <function connect.<locals>.connector at 0x000001B54A354860>
+2025-01-11 11:47:31,332 - DEBUG - operation <function connect.<locals>.connector at 0x000001B54A354860> completed
+2025-01-11 11:47:31,333 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001B54A38A200>, 'SELECT tg_user_id FROM Starst', ())
+2025-01-11 11:47:31,333 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001B54A38A200>, 'SELECT tg_user_id FROM Starst', ()) completed
+2025-01-11 11:47:31,334 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B543E824C0>)
+2025-01-11 11:47:31,334 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001B543E824C0>) completed
+2025-01-11 11:47:31,334 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B543E824C0>)
+2025-01-11 11:47:31,334 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001B543E824C0>) completed
+2025-01-11 11:47:31,335 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001B54A38A200>)
+2025-01-11 11:47:31,336 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001B54A38A200>) completed
+2025-01-11 11:47:31,594 - INFO - Update id=595973031 is handled. Duration 796 ms by bot id=5530220333
+2025-01-11 11:48:26,589 - DEBUG - Using proactor: IocpProactor
+2025-01-11 11:48:26,589 - DEBUG - Looking up time zone info from registry
+2025-01-11 11:48:26,589 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 11:48:26,605 - INFO - Added job "reader" to job store "default"
+2025-01-11 11:48:26,605 - INFO - Scheduler started
+2025-01-11 11:48:26,605 - INFO - ____Бот начал работу___
+2025-01-11 11:48:26,605 - INFO - Start polling
+2025-01-11 11:48:26,605 - DEBUG - Looking for jobs to run
+2025-01-11 11:48:26,605 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 20373.394823 seconds)
+2025-01-11 11:48:27,212 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 11:49:09,889 - DEBUG - Looking up time zone info from registry
+2025-01-11 11:49:09,889 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 11:49:09,889 - INFO - Added job "reader" to job store "default"
+2025-01-11 11:49:09,889 - INFO - Scheduler started
+2025-01-11 11:49:09,889 - INFO - ____Бот начал работу___
+2025-01-11 11:49:09,889 - INFO - Start polling
+2025-01-11 11:49:09,889 - DEBUG - Looking for jobs to run
+2025-01-11 11:49:09,889 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 20330.110884 seconds)
+2025-01-11 11:49:10,240 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 11:50:05,422 - DEBUG - executing <function connect.<locals>.connector at 0x0000017FA14DCC20>
+2025-01-11 11:50:05,422 - DEBUG - operation <function connect.<locals>.connector at 0x0000017FA14DCC20> completed
+2025-01-11 11:50:05,422 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000017FA865A2F0>, 'SELECT tg_user_id FROM Just_users', ())
+2025-01-11 11:50:05,422 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000017FA865A2F0>, 'SELECT tg_user_id FROM Just_users', ()) completed
+2025-01-11 11:50:05,422 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000017FA86AEA40>)
+2025-01-11 11:50:05,422 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000017FA86AEA40>) completed
+2025-01-11 11:50:05,422 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000017FA86AEA40>)
+2025-01-11 11:50:05,422 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000017FA86AEA40>) completed
+2025-01-11 11:50:05,422 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000017FA865A2F0>)
+2025-01-11 11:50:05,422 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000017FA865A2F0>) completed
+2025-01-11 11:50:05,422 - DEBUG - executing <function connect.<locals>.connector at 0x0000017FA864ED40>
+2025-01-11 11:50:05,422 - DEBUG - operation <function connect.<locals>.connector at 0x0000017FA864ED40> completed
+2025-01-11 11:50:05,422 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000017FA865A2F0>, 'SELECT tg_user_id FROM Starst', ())
+2025-01-11 11:50:05,422 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000017FA865A2F0>, 'SELECT tg_user_id FROM Starst', ()) completed
+2025-01-11 11:50:05,422 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000017FA86AEA40>)
+2025-01-11 11:50:05,422 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000017FA86AEA40>) completed
+2025-01-11 11:50:05,438 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000017FA86AEA40>)
+2025-01-11 11:50:05,438 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000017FA86AEA40>) completed
+2025-01-11 11:50:05,438 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000017FA865A2F0>)
+2025-01-11 11:50:05,438 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000017FA865A2F0>) completed
+2025-01-11 11:50:05,594 - INFO - Update id=595973032 is handled. Duration 719 ms by bot id=5530220333
+2025-01-11 12:06:22,871 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:06:22,887 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:06:22,889 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:06:22,889 - INFO - Scheduler started
+2025-01-11 12:06:22,889 - INFO - ____Бот начал работу___
+2025-01-11 12:06:22,889 - INFO - Start polling
+2025-01-11 12:06:22,889 - DEBUG - Looking for jobs to run
+2025-01-11 12:06:22,889 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 19297.110757 seconds)
+2025-01-11 12:06:23,520 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:06:42,702 - DEBUG - executing <function connect.<locals>.connector at 0x000001570579D9E0>
+2025-01-11 12:06:42,703 - DEBUG - operation <function connect.<locals>.connector at 0x000001570579D9E0> completed
+2025-01-11 12:06:42,704 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000015705752980>, 'SELECT tg_user_id FROM Just_users', ())
+2025-01-11 12:06:42,705 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000015705752980>, 'SELECT tg_user_id FROM Just_users', ()) completed
+2025-01-11 12:06:42,705 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000015701864FC0>)
+2025-01-11 12:06:42,706 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000015701864FC0>) completed
+2025-01-11 12:06:42,706 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000015701864FC0>)
+2025-01-11 12:06:42,707 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000015701864FC0>) completed
+2025-01-11 12:06:42,707 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000015705752980>)
+2025-01-11 12:06:42,708 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000015705752980>) completed
+2025-01-11 12:06:42,710 - DEBUG - executing <function connect.<locals>.connector at 0x0000015705773560>
+2025-01-11 12:06:42,711 - DEBUG - operation <function connect.<locals>.connector at 0x0000015705773560> completed
+2025-01-11 12:06:42,712 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000015705752980>, 'SELECT tg_user_id FROM Starst', ())
+2025-01-11 12:06:42,712 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000015705752980>, 'SELECT tg_user_id FROM Starst', ()) completed
+2025-01-11 12:06:42,713 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000015701864FC0>)
+2025-01-11 12:06:42,713 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000015701864FC0>) completed
+2025-01-11 12:06:42,714 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000015701864FC0>)
+2025-01-11 12:06:42,714 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000015701864FC0>) completed
+2025-01-11 12:06:42,715 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000015705752980>)
+2025-01-11 12:06:42,715 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000015705752980>) completed
+2025-01-11 12:06:42,894 - INFO - Update id=595973033 is handled. Duration 844 ms by bot id=5530220333
+2025-01-11 12:07:02,249 - INFO - Update id=595973034 is not handled. Duration 30 ms by bot id=5530220333
+2025-01-11 12:07:02,250 - ERROR - Cause exception while process update id=595973034 by bot id=5530220333
+ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 17, in logging_adm
+    await bot.send_document(chat_id=user_id_adm, document=file, caption="Вот ваш документ!")
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\client\bot.py", line 2555, in send_document
+    call = SendDocument(
+           ^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2025-01-11 12:07:55,783 - INFO - Update id=595973035 is not handled. Duration 15 ms by bot id=5530220333
+2025-01-11 12:07:55,783 - ERROR - Cause exception while process update id=595973035 by bot id=5530220333
+ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 17, in logging_adm
+    await bot.send_document(chat_id=user_id_adm, document=file, caption="Вот ваш документ!")
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\client\bot.py", line 2555, in send_document
+    call = SendDocument(
+           ^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2025-01-11 12:08:43,733 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:08:43,733 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:08:43,748 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:08:43,748 - INFO - Scheduler started
+2025-01-11 12:08:43,748 - INFO - ____Бот начал работу___
+2025-01-11 12:08:43,748 - INFO - Start polling
+2025-01-11 12:08:43,748 - DEBUG - Looking for jobs to run
+2025-01-11 12:08:43,748 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 19156.251092 seconds)
+2025-01-11 12:08:44,408 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:08:47,730 - INFO - Update id=595973036 is not handled. Duration 15 ms by bot id=5530220333
+2025-01-11 12:08:47,730 - ERROR - Cause exception while process update id=595973036 by bot id=5530220333
+ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 17, in logging_adm
+    await bot.send_document(chat_id=user_id_adm, document=file)
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\client\bot.py", line 2555, in send_document
+    call = SendDocument(
+           ^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2025-01-11 12:11:11,063 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:11:11,078 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:11:11,078 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:11:11,078 - INFO - Scheduler started
+2025-01-11 12:11:11,078 - INFO - ____Бот начал работу___
+2025-01-11 12:11:11,078 - INFO - Start polling
+2025-01-11 12:11:11,078 - DEBUG - Looking for jobs to run
+2025-01-11 12:11:11,078 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 19008.921030 seconds)
+2025-01-11 12:11:11,571 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:11:16,104 - INFO - Update id=595973037 is not handled. Duration 15 ms by bot id=5530220333
+2025-01-11 12:11:16,104 - ERROR - Cause exception while process update id=595973037 by bot id=5530220333
+ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 17, in logging_adm
+    await message.answer_document(file, caption="Вот ваш документ!")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\types\message.py", line 1292, in answer_document
+    return SendDocument(
+           ^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pydantic\main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for SendDocument
+document.is-instance[InputFile]
+  Input should be an instance of InputFile [type=is_instance_of, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/is_instance_of
+document.str
+  Input should be a valid string [type=string_type, input_value=<_io.BufferedReader name=...w_obshaga_bot\\app.log'>, input_type=BufferedReader]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2025-01-11 12:14:04,900 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:14:04,916 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:14:04,916 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:14:04,916 - INFO - Scheduler started
+2025-01-11 12:14:04,916 - INFO - ____Бот начал работу___
+2025-01-11 12:14:04,916 - INFO - Start polling
+2025-01-11 12:14:04,916 - DEBUG - Looking for jobs to run
+2025-01-11 12:14:04,916 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 18835.083367 seconds)
+2025-01-11 12:14:05,653 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:14:09,986 - INFO - Update id=595973038 is not handled. Duration 0 ms by bot id=5530220333
+2025-01-11 12:14:09,986 - ERROR - Cause exception while process update id=595973038 by bot id=5530220333
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 15, in logging_adm
+    document = InputFile(file_path)
+               ^^^^^^^^^^^^^^^^^^^^
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+2025-01-11 12:17:27,508 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:17:27,523 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:17:27,523 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:17:27,523 - INFO - Scheduler started
+2025-01-11 12:17:27,523 - INFO - ____Бот начал работу___
+2025-01-11 12:17:27,523 - INFO - Start polling
+2025-01-11 12:17:27,523 - DEBUG - Looking for jobs to run
+2025-01-11 12:17:27,523 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 18632.476075 seconds)
+2025-01-11 12:17:28,087 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:17:33,838 - INFO - Update id=595973039 is not handled. Duration 15 ms by bot id=5530220333
+2025-01-11 12:17:33,838 - ERROR - Cause exception while process update id=595973039 by bot id=5530220333
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 15, in logging_adm
+    await bot.send_document(chat_id=user_id_adm, document=InputFile(file_path), caption="Вот ваш документ!")
+                                                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+2025-01-11 12:18:28,794 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:18:28,798 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:18:28,800 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:18:28,800 - INFO - Scheduler started
+2025-01-11 12:18:28,800 - INFO - ____Бот начал работу___
+2025-01-11 12:18:28,802 - INFO - Start polling
+2025-01-11 12:18:28,802 - DEBUG - Looking for jobs to run
+2025-01-11 12:18:28,802 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 18571.197706 seconds)
+2025-01-11 12:18:29,328 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:18:36,474 - INFO - Update id=595973040 is not handled. Duration 0 ms by bot id=5530220333
+2025-01-11 12:18:36,474 - ERROR - Cause exception while process update id=595973040 by bot id=5530220333
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 16, in logging_adm
+    await bot.send_document(chat_id=user_id_adm, document=InputFile(file_path), caption="Вот ваш документ!")
+                                                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+2025-01-11 12:19:09,219 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:19:09,219 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:19:09,219 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:19:09,219 - INFO - Scheduler started
+2025-01-11 12:19:09,219 - INFO - ____Бот начал работу___
+2025-01-11 12:19:09,219 - INFO - Start polling
+2025-01-11 12:19:09,219 - DEBUG - Looking for jobs to run
+2025-01-11 12:19:09,219 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 18530.780027 seconds)
+2025-01-11 12:19:10,397 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:19:15,558 - INFO - Update id=595973041 is not handled. Duration 0 ms by bot id=5530220333
+2025-01-11 12:19:15,558 - ERROR - Cause exception while process update id=595973041 by bot id=5530220333
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 15, in logging_adm
+    await bot.send_document(chat_id=user_id_adm, document=InputFile(file_path), caption="Вот ваш документ!")
+                                                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+2025-01-11 12:21:57,318 - DEBUG - Looking up time zone info from registry
+2025-01-11 12:21:57,318 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-11 12:21:57,318 - INFO - Added job "reader" to job store "default"
+2025-01-11 12:21:57,318 - INFO - Scheduler started
+2025-01-11 12:21:57,318 - INFO - ____Бот начал работу___
+2025-01-11 12:21:57,318 - INFO - Start polling
+2025-01-11 12:21:57,318 - DEBUG - Looking for jobs to run
+2025-01-11 12:21:57,318 - DEBUG - Next wakeup is due at 2025-01-11 17:28:00+03:00 (in 18362.681766 seconds)
+2025-01-11 12:21:57,802 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-11 12:22:00,787 - INFO - Update id=595973042 is not handled. Duration 0 ms by bot id=5530220333
+2025-01-11 12:22:00,787 - ERROR - Cause exception while process update id=595973042 by bot id=5530220333
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+Traceback (most recent call last):
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot\logging_hand.py", line 15, in logging_adm
+    await bot.send_document(chat_id=user_id_adm, document=InputFile(file_path), caption="Вот ваш документ!")
+                                                          ^^^^^^^^^^^^^^^^^^^^
+TypeError: Can't instantiate abstract class InputFile without an implementation for abstract method 'read'
+2025-01-14 16:36:51,561 - DEBUG - Looking up time zone info from registry
+2025-01-14 16:36:51,624 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-01-14 16:36:51,655 - INFO - Added job "reader" to job store "default"
+2025-01-14 16:36:51,655 - INFO - Scheduler started
+2025-01-14 16:36:51,655 - INFO - ____Бот начал работу___
+2025-01-14 16:36:51,655 - INFO - Start polling
+2025-01-14 16:36:51,655 - DEBUG - Looking for jobs to run
+2025-01-14 16:36:51,655 - DEBUG - Next wakeup is due at 2025-01-14 17:28:00+03:00 (in 3068.344632 seconds)
+2025-01-14 16:36:52,553 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-01-14 16:37:38,569 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121A39C0>
+2025-01-14 16:37:38,571 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121A39C0> completed
+2025-01-14 16:37:38,572 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F6A0>, 'SELECT tg_user_id FROM Just_users', ())
+2025-01-14 16:37:38,573 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F6A0>, 'SELECT tg_user_id FROM Just_users', ()) completed
+2025-01-14 16:37:38,574 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001470ECDA4C0>)
+2025-01-14 16:37:38,574 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001470ECDA4C0>) completed
+2025-01-14 16:37:38,574 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001470ECDA4C0>)
+2025-01-14 16:37:38,575 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001470ECDA4C0>) completed
+2025-01-14 16:37:38,575 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F6A0>)
+2025-01-14 16:37:38,576 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F6A0>) completed
+2025-01-14 16:37:38,577 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CEDE0>
+2025-01-14 16:37:38,578 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CEDE0> completed
+2025-01-14 16:37:38,579 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F6A0>, 'SELECT tg_user_id FROM Starst', ())
+2025-01-14 16:37:38,580 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F6A0>, 'SELECT tg_user_id FROM Starst', ()) completed
+2025-01-14 16:37:38,580 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001470ECDA4C0>)
+2025-01-14 16:37:38,580 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001470ECDA4C0>) completed
+2025-01-14 16:37:38,581 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001470ECDA4C0>)
+2025-01-14 16:37:38,581 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001470ECDA4C0>) completed
+2025-01-14 16:37:38,581 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F6A0>)
+2025-01-14 16:37:38,582 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F6A0>) completed
+2025-01-14 16:37:38,584 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CECA0>
+2025-01-14 16:37:38,585 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CECA0> completed
+2025-01-14 16:37:38,585 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F970>, 'SELECT * FROM Starst WHERE tg_user_id = ?', (7566236875,))
+2025-01-14 16:37:38,615 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F970>, 'SELECT * FROM Starst WHERE tg_user_id = ?', (7566236875,)) completed
+2025-01-14 16:37:38,616 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001470B1255C0>)
+2025-01-14 16:37:38,616 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001470B1255C0>) completed
+2025-01-14 16:37:38,617 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001470B1255C0>)
+2025-01-14 16:37:38,617 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001470B1255C0>) completed
+2025-01-14 16:37:38,618 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F970>)
+2025-01-14 16:37:38,618 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F970>) completed
+2025-01-14 16:37:38,859 - INFO - Update id=595973043 is handled. Duration 953 ms by bot id=5530220333
+2025-01-14 16:37:40,783 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121A39C0>
+2025-01-14 16:37:40,784 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121A39C0> completed
+2025-01-14 16:37:40,785 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,))
+2025-01-14 16:37:40,785 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,)) completed
+2025-01-14 16:37:40,786 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712409CC0>)
+2025-01-14 16:37:40,787 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712409CC0>) completed
+2025-01-14 16:37:40,788 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712409CC0>)
+2025-01-14 16:37:40,788 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712409CC0>) completed
+2025-01-14 16:37:40,789 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>)
+2025-01-14 16:37:40,789 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>) completed
+2025-01-14 16:37:40,791 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CDC60>
+2025-01-14 16:37:40,792 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CDC60> completed
+2025-01-14 16:37:40,793 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F970>, 'SELECT * FROM Just_users WHERE name = ?', ('Вася Иванов Вассильевич',))
+2025-01-14 16:37:40,794 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F970>, 'SELECT * FROM Just_users WHERE name = ?', ('Вася Иванов Вассильевич',)) completed
+2025-01-14 16:37:40,795 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712409CC0>)
+2025-01-14 16:37:40,795 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712409CC0>) completed
+2025-01-14 16:37:40,796 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712409CC0>)
+2025-01-14 16:37:40,796 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712409CC0>) completed
+2025-01-14 16:37:40,797 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F970>)
+2025-01-14 16:37:40,797 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F970>) completed
+2025-01-14 16:37:41,083 - INFO - Update id=595973044 is handled. Duration 311 ms by bot id=5530220333
+2025-01-14 16:37:43,653 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CED40>
+2025-01-14 16:37:43,654 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CED40> completed
+2025-01-14 16:37:43,655 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F100>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,))
+2025-01-14 16:37:43,656 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F100>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,)) completed
+2025-01-14 16:37:43,657 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712418140>)
+2025-01-14 16:37:43,657 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712418140>) completed
+2025-01-14 16:37:43,658 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712418140>)
+2025-01-14 16:37:43,658 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712418140>) completed
+2025-01-14 16:37:43,658 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F100>)
+2025-01-14 16:37:43,659 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F100>) completed
+2025-01-14 16:37:43,660 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CEDE0>
+2025-01-14 16:37:43,661 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CEDE0> completed
+2025-01-14 16:37:43,662 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F100>, 'SELECT * FROM Just_users WHERE name = ?', ('Вася Иванов Вассильевич',))
+2025-01-14 16:37:43,663 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F100>, 'SELECT * FROM Just_users WHERE name = ?', ('Вася Иванов Вассильевич',)) completed
+2025-01-14 16:37:43,663 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712418140>)
+2025-01-14 16:37:43,664 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712418140>) completed
+2025-01-14 16:37:43,665 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712418140>)
+2025-01-14 16:37:43,665 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712418140>) completed
+2025-01-14 16:37:43,666 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F100>)
+2025-01-14 16:37:43,666 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F100>) completed
+2025-01-14 16:37:43,838 - INFO - Update id=595973045 is handled. Duration 186 ms by bot id=5530220333
+2025-01-14 16:37:45,396 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CEAC0>
+2025-01-14 16:37:45,397 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CEAC0> completed
+2025-01-14 16:37:45,398 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,))
+2025-01-14 16:37:45,399 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,)) completed
+2025-01-14 16:37:45,400 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000147125823C0>)
+2025-01-14 16:37:45,401 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000147125823C0>) completed
+2025-01-14 16:37:45,401 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000147125823C0>)
+2025-01-14 16:37:45,401 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000147125823C0>) completed
+2025-01-14 16:37:45,402 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>)
+2025-01-14 16:37:45,402 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>) completed
+2025-01-14 16:37:45,405 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CE700>
+2025-01-14 16:37:45,406 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CE700> completed
+2025-01-14 16:37:45,407 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT * FROM Just_users WHERE name = ?', ('пупупуп ппвпвапвап',))
+2025-01-14 16:37:45,408 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT * FROM Just_users WHERE name = ?', ('пупупуп ппвпвапвап',)) completed
+2025-01-14 16:37:45,409 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000147125823C0>)
+2025-01-14 16:37:45,409 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000147125823C0>) completed
+2025-01-14 16:37:45,410 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000147125823C0>)
+2025-01-14 16:37:45,410 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000147125823C0>) completed
+2025-01-14 16:37:45,410 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>)
+2025-01-14 16:37:45,411 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>) completed
+2025-01-14 16:37:45,691 - INFO - Update id=595973046 is handled. Duration 313 ms by bot id=5530220333
+2025-01-14 16:37:48,259 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CF4C0>
+2025-01-14 16:37:48,261 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CF4C0> completed
+2025-01-14 16:37:48,261 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014712568040>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,))
+2025-01-14 16:37:48,262 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014712568040>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,)) completed
+2025-01-14 16:37:48,262 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000147125810C0>)
+2025-01-14 16:37:48,262 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x00000147125810C0>) completed
+2025-01-14 16:37:48,262 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000147125810C0>)
+2025-01-14 16:37:48,264 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000147125810C0>) completed
+2025-01-14 16:37:48,264 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014712568040>)
+2025-01-14 16:37:48,264 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014712568040>) completed
+2025-01-14 16:37:48,265 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CF420>
+2025-01-14 16:37:48,265 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CF420> completed
+2025-01-14 16:37:48,266 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT * FROM Just_users WHERE name = ?', ('Ефимова Анастасия Олеговна: 302',))
+2025-01-14 16:37:48,268 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT * FROM Just_users WHERE name = ?', ('Ефимова Анастасия Олеговна: 302',)) completed
+2025-01-14 16:37:48,269 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712581AC0>)
+2025-01-14 16:37:48,269 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712581AC0>) completed
+2025-01-14 16:37:48,269 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712581AC0>)
+2025-01-14 16:37:48,269 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712581AC0>) completed
+2025-01-14 16:37:48,270 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>)
+2025-01-14 16:37:48,270 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>) completed
+2025-01-14 16:37:48,608 - INFO - Update id=595973047 is handled. Duration 360 ms by bot id=5530220333
+2025-01-14 16:37:51,432 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CF2E0>
+2025-01-14 16:37:51,433 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CF2E0> completed
+2025-01-14 16:37:51,434 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,))
+2025-01-14 16:37:51,434 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,)) completed
+2025-01-14 16:37:51,436 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712583AC0>)
+2025-01-14 16:37:51,436 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712583AC0>) completed
+2025-01-14 16:37:51,437 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712583AC0>)
+2025-01-14 16:37:51,437 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712583AC0>) completed
+2025-01-14 16:37:51,438 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>)
+2025-01-14 16:37:51,438 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>) completed
+2025-01-14 16:37:51,439 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CED40>
+2025-01-14 16:37:51,440 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CED40> completed
+2025-01-14 16:37:51,441 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT * FROM Just_users WHERE name = ?', ('Миннигулова Ляйсан Ильдаровна: 327',))
+2025-01-14 16:37:51,442 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F4C0>, 'SELECT * FROM Just_users WHERE name = ?', ('Миннигулова Ляйсан Ильдаровна: 327',)) completed
+2025-01-14 16:37:51,442 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712583AC0>)
+2025-01-14 16:37:51,443 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712583AC0>) completed
+2025-01-14 16:37:51,443 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712583AC0>)
+2025-01-14 16:37:51,444 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712583AC0>) completed
+2025-01-14 16:37:51,444 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>)
+2025-01-14 16:37:51,445 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F4C0>) completed
+2025-01-14 16:37:51,647 - INFO - Update id=595973048 is handled. Duration 219 ms by bot id=5530220333
+2025-01-14 16:38:23,201 - INFO - Update id=595973049 is handled. Duration 655 ms by bot id=5530220333
+2025-01-14 16:39:27,177 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CFF60>
+2025-01-14 16:39:27,178 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CFF60> completed
+2025-01-14 16:39:27,178 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F790>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,))
+2025-01-14 16:39:27,180 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F790>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,)) completed
+2025-01-14 16:39:27,180 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A33740>)
+2025-01-14 16:39:27,181 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A33740>) completed
+2025-01-14 16:39:27,182 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A33740>)
+2025-01-14 16:39:27,182 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A33740>) completed
+2025-01-14 16:39:27,183 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F790>)
+2025-01-14 16:39:27,183 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F790>) completed
+2025-01-14 16:39:27,184 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CF560>
+2025-01-14 16:39:27,185 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CF560> completed
+2025-01-14 16:39:27,186 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F790>, 'SELECT * FROM Just_users WHERE name = ?', ('Минигазимов Марсель Альфирович: 303',))
+2025-01-14 16:39:27,187 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001471213F790>, 'SELECT * FROM Just_users WHERE name = ?', ('Минигазимов Марсель Альфирович: 303',)) completed
+2025-01-14 16:39:27,187 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A33740>)
+2025-01-14 16:39:27,187 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A33740>) completed
+2025-01-14 16:39:27,188 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A33740>)
+2025-01-14 16:39:27,188 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A33740>) completed
+2025-01-14 16:39:27,188 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F790>)
+2025-01-14 16:39:27,188 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001471213F790>) completed
+2025-01-14 16:39:27,900 - INFO - Update id=595973050 is handled. Duration 734 ms by bot id=5530220333
+2025-01-14 16:39:29,023 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CFEC0>
+2025-01-14 16:39:29,024 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CFEC0> completed
+2025-01-14 16:39:29,025 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014712B3C400>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,))
+2025-01-14 16:39:29,026 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014712B3C400>, 'SELECT name FROM Just_users WHERE unic_kod_strtsi = ?', (573557,)) completed
+2025-01-14 16:39:29,026 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A32F40>)
+2025-01-14 16:39:29,027 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A32F40>) completed
+2025-01-14 16:39:29,027 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A32F40>)
+2025-01-14 16:39:29,027 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A32F40>) completed
+2025-01-14 16:39:29,028 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014712B3C400>)
+2025-01-14 16:39:29,028 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014712B3C400>) completed
+2025-01-14 16:39:29,029 - DEBUG - executing <function connect.<locals>.connector at 0x00000147121CED40>
+2025-01-14 16:39:29,030 - DEBUG - operation <function connect.<locals>.connector at 0x00000147121CED40> completed
+2025-01-14 16:39:29,031 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014712B3C400>, 'SELECT * FROM Just_users WHERE name = ?', ('Ефимова Анастасия Олеговна: 302',))
+2025-01-14 16:39:29,032 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014712B3C400>, 'SELECT * FROM Just_users WHERE name = ?', ('Ефимова Анастасия Олеговна: 302',)) completed
+2025-01-14 16:39:29,032 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A32F40>)
+2025-01-14 16:39:29,032 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014712A32F40>) completed
+2025-01-14 16:39:29,033 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A32F40>)
+2025-01-14 16:39:29,033 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014712A32F40>) completed
+2025-01-14 16:39:29,033 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014712B3C400>)
+2025-01-14 16:39:29,033 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014712B3C400>) completed
+2025-01-14 16:39:29,355 - INFO - Update id=595973051 is handled. Duration 327 ms by bot id=5530220333

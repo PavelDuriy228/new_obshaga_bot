@@ -6,6 +6,7 @@ from db import (
 from config import bot
 from loggers.logs1 import log_error_w_sending
 from aiogram.types import  InlineKeyboardButton, InlineKeyboardMarkup
+from other_func import actualitic_date
 
     # unic_kod INT,
     # event_name TEXT,
@@ -64,9 +65,10 @@ class Event ():
         code = await create_code(
             table="Events", start=1_000_000,
             end=1_500_000
-        )
+        )        
+        self.status = await actualitic_date(f"{self.date} {self.time}")
         query = f"INSERT INTO Events (unic_kod, event_name, even_desription, event_date, event_time, status) VALUES (?, ?, ?, ?, ?, ?)"
-        await execute_write_query(query, (code, self.name, self.description, self.date, self.time, "active"))
+        await execute_write_query(query, (code, self.name, self.description, self.date, self.time, self.status))
         self.id = await get_value_by_condition(
             table="Events", column="unic_kod",
             condition_value= self.name,
@@ -109,6 +111,7 @@ class Event ():
         )
     
     async def update_time(self, new_time: list):        
+        self.status = await actualitic_date(date1=f"{new_time[0]} {new_time[1]}")
         # Изменение даты
         await update_value(
             table="Events", condition_column ='unic_kod',
@@ -125,14 +128,17 @@ class Event ():
         self.name = event_data.get('name', self.name)
         self.date = event_data.get('date', self.date)
         self.description = event_data.get('description', self.description)
-        self.time = event_data.get('time', self.time)        
+        self.time = event_data.get('time', self.time)   
+
+        # Установка актуального статуса
+        self.status = await actualitic_date(date1=f"{self.date} {self.time}")     
         await self.set_text()
         
     async def update_db (self, param: int=0):
         # Обновление в таблице базовых параметров
         if param ==0:
-            set_values = [self.name, self.description, self.date, self.time]
-            columns = ['event_name', 'even_desription', 'event_date', 'event_time']
+            set_values = [self.name, self.description, self.date, self.time, self.status]
+            columns = ['event_name', 'even_desription', 'event_date', 'event_time', 'status']
         # Обновление в бд данных для отправки пользователям сообщений
         if param == 1:
             set_values = [self.joined_users_id, self.joined_users_username]

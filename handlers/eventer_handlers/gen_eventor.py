@@ -6,6 +6,7 @@ from aiogram.types import CallbackQuery, Message
 from FSMs import NewEvent, SearchName
 from other_func import splitter_time, search
 
+
 router = Router()
 
 @router.callback_query(lambda c: c.data == "eventor_menu")

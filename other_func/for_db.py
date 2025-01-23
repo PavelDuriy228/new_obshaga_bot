@@ -1,4 +1,4 @@
-from db import update_value, get_value_by_condition
+from db import update_value, get_value_by_condition, get_rows_by_condition
 
 async def replacer(table:str, column:str, condition_column:str, condition_value, value_for_replace:str,value_to_replace:str):
     # Получаем ячейку
@@ -13,3 +13,10 @@ async def replacer(table:str, column:str, condition_column:str, condition_value,
         column=column, condition_column=condition_column,
         condition_value=condition_value, value=new_value
     )
+
+async def get_active_events():
+    rows = await get_rows_by_condition(
+        table='Events',
+        condition_column='status', condition_value='active'
+    )
+    return rows

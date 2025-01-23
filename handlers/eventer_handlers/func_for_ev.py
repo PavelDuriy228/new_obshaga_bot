@@ -65,7 +65,7 @@ async def set_new_time(message: Message, state: FSMContext):
         await state.clear()
         event =await Event.set_by_id(id=id)
         await event.update_time(date)        
-        await message.answer(text=f"Время изменено на {event.date}", reply_markup= home_eventor)
+        await message.answer(text=f"Время изменено на {event.date} {event.time}", reply_markup= home_eventor)
     else:
         await message.answer(text="Неверный формат", reply_markup=home_eventor)
 
