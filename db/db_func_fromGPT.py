@@ -32,6 +32,17 @@ async def get_rows_by_condition(table: str, condition_column: str, condition_val
     # Возвращаем результат в виде списка списков
     return [list(row) for row in rows]  # Преобразуем кортежи в списки
 
+# Получение всех строк с определенными колонками, которые удовлетворяют какому-то условию
+async def get_rows_by_condition_full(table: str, condition_column: str, condition_value: str, columns: str="*"):
+    # Формируем SQL-запрос, выбирая только нужные колонки
+    query = f"SELECT {columns} FROM {table} WHERE {condition_column} = ?"
+    params = (condition_value,)
+    
+    # Выполняем запрос с помощью существующей функции
+    rows = await execute_select_query(query, params)
+    
+    # Возвращаем результат в виде списка списков
+    return [list(row) for row in rows]  # Преобразуем кортежи в списки
 # Получение всех строк колонки, которых удовлетворяют какому то условию
 async def get_rows_for_statik():
     # Формируем SQL-запрос

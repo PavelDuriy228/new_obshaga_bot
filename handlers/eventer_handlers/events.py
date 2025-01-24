@@ -78,7 +78,7 @@ async def full_events(callback: CallbackQuery):
     # ТОлько назад
     if page +1 >= len(list_nums) and page-1 > -1:
         keyboard.append([
-            InlineKeyboardButton(text="⬅️", callback_data=f"all_events:{page+1}")        
+            InlineKeyboardButton(text="⬅️", callback_data=f"all_events:{page-1}")        
         ])
     markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
     await callback.message.edit_text(text = text, reply_markup=markup)

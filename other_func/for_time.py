@@ -2,12 +2,12 @@ from datetime import datetime, timedelta
 
 async def actualitic_date(date1):
     cur_date = datetime.now()
-    formated_datetime = cur_date.strftime("%Y-%m-%d %H:%M")
+    #formated_datetime = cur_date.strftime("%Y-%m-%d %H:%M")
 
     if isinstance(date1, str):
         date1 = datetime.strptime(date1, "%Y-%m-%d %H:%M")
     
-    if date1> formated_datetime:
+    if date1 > cur_date:
         return 'active'
     return 'NonActive'
 

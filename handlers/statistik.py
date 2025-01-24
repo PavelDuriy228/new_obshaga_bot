@@ -36,8 +36,8 @@ async def statistika (callback: CallbackQuery):
     # Если есть возможность двигаться вправо и влево
     if page + 50 <line_count and page - 50 >=0:
         keyboard.append([
-            InlineKeyboardButton(text="➡️", callback_data=f"full_statik:{page+50}"),
-            InlineKeyboardButton(text="⬅️", callback_data=f"full_statik:{page-50}")
+            InlineKeyboardButton(text="⬅️", callback_data=f"full_statik:{page-50}"),
+            InlineKeyboardButton(text="➡️", callback_data=f"full_statik:{page+50}")            
         ])
     serfing = InlineKeyboardMarkup(inline_keyboard=keyboard)
 
