@@ -14,7 +14,7 @@ Bot_token= os.getenv('token_test')
 sheet_url = os.getenv('google_table')
 # API бота гугл таблиц
 gc = service_account(filename="api_for_google_sheet.json")
-wks = gc.open("testTable")
+wks = gc.open(" 🔞 Аттестация 1 2024/2025")
 
 
 if Bot_token is None:
@@ -40,7 +40,8 @@ CREATE TABLE IF NOT EXISTS Starst (
     unic_kod INT,
     tg_user_id INT,
     name TEXT,
-    place TEXT     
+    place TEXT, 
+    created_works MEDIUMTEXT
 )
 ''')
 cursor.execute('''
@@ -51,7 +52,8 @@ CREATE TABLE IF NOT EXISTS Just_users (
     count_b INT,
     comment MEDIUMTEXT,
     unic_kod_strtsi INT,
-    code_events MEDIUMTEXT
+    code_events MEDIUMTEXT,
+    code_of_works MEDIUMTEXT
 )
 ''')
 cursor.execute('''

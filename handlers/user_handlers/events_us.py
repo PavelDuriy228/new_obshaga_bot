@@ -1,7 +1,6 @@
 from aiogram import  Router
-from keyboards import total_statistik, start_inl_kbs
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from db import Event, update_value_w_symbol, get_value_by_condition, update_value
+from db import Event, get_value_by_condition
 from other_func import replacer
 
 router = Router()

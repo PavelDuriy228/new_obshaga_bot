@@ -4,6 +4,7 @@ from datetime import datetime
 # Проверка нового старосты по маске
 async def checking_starst (text:str) -> bool:
     pattern  = r'^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+:\s[0-9]+этаж\(\w+(\s*\/\s*\w+)?\)$'
+    pattern2 = r'^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+:\s1+этаж$'
     return bool(re.match(pattern, text))
 
 

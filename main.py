@@ -20,7 +20,6 @@ routers = [
 for cur_router in routers:
     dp.include_router(cur_router)
 
-
 async def main(message: types.Message = None):
     try:
         # Благодаря этому в консоли появлятся вся информации о работе тг бота
@@ -28,20 +27,20 @@ async def main(message: types.Message = None):
         # Настройка конфигурации логирования
         
 #________ Логгирование в спец файл
-        # logging.basicConfig(
-        #     filename='app.log',  # Имя файла для записи логов
-        #     level=logging.DEBUG,  # Уровень логирования (DEBUG, INFO, WARNING, ERROR, CRITICAL)
-        #     format='%(asctime)s - %(levelname)s - %(message)s'  # Формат сообщений
-        # )
+        logging.basicConfig(
+            filename='app.log',  # Имя файла для записи логов
+            level=logging.DEBUG,  # Уровень логирования (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+            format='%(asctime)s - %(levelname)s - %(message)s'  # Формат сообщений
+        )
         # Назначение выполнение функции чтения данных с таблицы
         scheduler = AsyncIOScheduler()
-        scheduler.add_job(reader_gs, 'cron', hour=14, minute =15)
-        scheduler.add_job(actualitic_status3, 'interval', minutes = 2)
+        scheduler.add_job(reader_gs, 'cron', hour=1, minute =20)
+        scheduler.add_job(actualitic_status3, 'interval', minutes = 30)
         scheduler.start()
         if scheduler:
             print ("---Задача назначена")
 
-        logging.info("____Бот начал работу___")
+        #logging.info("____Бот начал работу___")
         # Этим мы опрашиваем тг на наличие уведомлений
         await dp.start_polling(bot)
         

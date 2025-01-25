@@ -1,6 +1,6 @@
 from aiogram import types, Router
 from config import user_id_adm, user_id_eventor
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from .sup_func import set_id_new_user, chosing_role
 from keyboards import adm_menu_markup, eventor_markup, total_statistik
@@ -39,3 +39,16 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
 
     if str(cur_user_id) == user_id_eventor:        
         await message.answer(text="Здравствуйте, создатель мероприятий", reply_markup= eventor_markup)
+
+@router.message(lambda message: message.text == '/father')
+async def father_handler (message: types.Message):
+    await message.answer(
+        text = 'Меня создал великолепниший человек, человек с большой буквы, лучший из своего вида @Dan4oke'
+    )
+
+@router.message(Command("feedback"))
+async def h_feedback(message: types.Message):
+    await message.answer(
+        text="Если возникли какие либо трудности или есть идеи,\
+        пишите мне в лс @I_Pavel_Durov, я обязательно отвечу"
+    )
