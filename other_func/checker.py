@@ -5,7 +5,8 @@ from datetime import datetime
 async def checking_starst (text:str) -> bool:
     pattern  = r'^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+:\s[0-9]+этаж\(\w+(\s*\/\s*\w+)?\)$'
     pattern2 = r'^[А-ЯЁ][а-яё]+\s[А-ЯЁ][а-яё]+:\s1+этаж$'
-    return bool(re.match(pattern, text))
+    sootv: bool =bool(re.match(pattern, text)) or bool(re.match(pattern2, text))
+    return sootv
 
 
 async def checking_time (date_string):

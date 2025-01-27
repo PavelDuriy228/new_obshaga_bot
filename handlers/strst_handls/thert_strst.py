@@ -1,7 +1,8 @@
 from aiogram import Router
 from config import username_bota
 from db import (
-    update_value, get_rows_by_condition
+    update_value, get_rows_by_condition,
+    get_all_if
 )
 from keyboards import   total_statistik, start_inl_kbs
 from other_func import sort_list0
@@ -44,3 +45,22 @@ async def star_statistika (callback: CallbackQuery):
         text="Нажмите, чтобы посмотреть полную статистику",
         reply_markup=total_statistik
     )
+
+@router.callback_query(lambda c: c.data.startswith("urls_my_studs:"))
+async def star_statistika (callback: CallbackQuery):    
+    unic_code = callback.data.split(":")[1]
+    names = await get_all_if(
+        table="Just_users", column="name",
+        condition_column="unic_kod_strtsi",
+        condition_value=unic_code
+    )
+    codes = await get_all_if(
+        table="Just_users", column="unic_kod",
+        condition_column="unic_kod_strtsi",
+        condition_value=unic_code
+    )
+    for i in range(len(names)):
+        await callback.message.answer(
+            text=f"Ссылка для: \n{names[i]}\n\nhttps://t.me/{username_bota}?start={codes[i]}"
+        )
+    

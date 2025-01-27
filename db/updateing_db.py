@@ -64,10 +64,10 @@ async def reader ():
                             else : comment= f"{comment}\n{zasl}: {count};"
                     print()
                     
-                    print (f"comment: \n{comment}")
-                    print(f"---ful: {all_count}")
-                    print (row)
-                    print("--------------------------------------")
+                    # print (f"comment: \n{comment}")
+                    # print(f"---ful: {all_count}")
+                    # print (row)
+                    # print("--------------------------------------")
                     user = User ()
                     await user.set_other_atributs(name = name, unic_kod=None, tg_user_id=None)                                
 

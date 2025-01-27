@@ -34,7 +34,7 @@ async def main(message: types.Message = None):
         )
         # Назначение выполнение функции чтения данных с таблицы
         scheduler = AsyncIOScheduler()
-        scheduler.add_job(reader_gs, 'cron', hour=1, minute =20)
+        scheduler.add_job(reader_gs, 'cron', hour=3, minute =20)
         scheduler.add_job(actualitic_status3, 'interval', minutes = 30)
         scheduler.start()
         if scheduler:
