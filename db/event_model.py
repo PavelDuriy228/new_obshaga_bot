@@ -49,7 +49,7 @@ class Event ():
                         reply_markup=event_joining
                     )
                 except Exception as e:
-                    log_error_w_sending(cur_id=tg_id, error=e)
+                    await log_error_w_sending(cur_id=tg_id, error=e)
     
     async def send_to_followers(self,text: str):   
         list_f =  self.joined_users_id.split(" ")
@@ -59,7 +59,7 @@ class Event ():
                     cur_id.strip()
                     if cur_id != "None": await bot.send_message(chat_id=int(cur_id), text= text)
                 except Exception as e:
-                    log_error_w_sending(cur_id=cur_id, error=e)
+                    await log_error_w_sending(cur_id=cur_id, error=e)
 
     async def add_to_table(self):
         code = await create_code(

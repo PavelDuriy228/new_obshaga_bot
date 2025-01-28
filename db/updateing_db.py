@@ -1,5 +1,6 @@
 from config import wks, bot, user_id_adm
 from db import get_value_by_condition, User, get_all, get_all_if
+from loggers.logs1 import logger_for_updating_db
 
 async def reader ():
     print ("----- Функция reader была вызвана ----")
@@ -56,13 +57,18 @@ async def reader ():
                     for i in range(len(title)):
                         zasl= title[i]
                         count = row[i]
-                        print(f"-------zasl {zasl}")
-                        print(f"-------count {count}")
-                        if count!='' and count!='0' and count !="": 
-                            all_count= all_count + int(count)
-                            if comment=="": comment= f"{zasl}: {count};"
-                            else : comment= f"{comment}\n{zasl}: {count};"
-                    print()
+                        # print(f"-------zasl {zasl}")
+                        # print(f"-------count {count}")
+                        try:
+                            if count!='' and count!='0' and count !=' ': 
+                                all_count= all_count + int(count)
+                                if comment=="": comment= f"{zasl} -- {count};"
+                                else : comment= f"{comment}\n{zasl} -- {count};"
+                        except Exception as e:
+                            await logger_for_updating_db(
+                                text=f"name:{name}; zasl[i]: {zasl}; count: {count}",
+                                error=e
+                            )
                     
                     # print (f"comment: \n{comment}")
                     # print(f"---ful: {all_count}")

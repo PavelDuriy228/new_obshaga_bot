@@ -4,6 +4,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from .sup_func import set_id_new_user, chosing_role
 from keyboards import adm_menu_markup, eventor_markup, total_statistik
+from db import reader_gs
 
 router = Router()
 
@@ -19,7 +20,6 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
 
     if not ( unic_code  is None ):
         # Перевод в int command.args
-        await message.answer(unic_code)
         unic_code = int(unic_code)
         # Проверка на существование кода в БД
         nalich = await set_id_new_user(
@@ -52,3 +52,11 @@ async def h_feedback(message: types.Message):
         text="Если возникли какие либо трудности или есть идеи,\
         пишите мне в лс @I_Pavel_Durov, я обязательно отвечу"
     )
+
+@router.message(Command("ch__update_table__ch"))
+async def updating_db_handl(message: types.Message):
+    if str(message.from_user.id) == user_id_adm:
+        await reader_gs()
+        await message.answer(
+            text="обновление базы данных завршено"
+        )

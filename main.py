@@ -23,7 +23,7 @@ for cur_router in routers:
 async def main(message: types.Message = None):
     try:
         # Благодаря этому в консоли появлятся вся информации о работе тг бота
-        logging.basicConfig(level=logging.INFO)
+        # logging.basicConfig(level=logging.INFO)
         # Настройка конфигурации логирования
         
 #________ Логгирование в спец файл
