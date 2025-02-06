@@ -3,10 +3,7 @@ from db import get_value_by_condition, User, get_all, get_all_if
 from loggers.logs1 import logger_for_updating_db
 
 async def reader ():
-    print ("----- Функция reader была вызвана ----")
-    mess= "Обновление БД - было совершено"
-    #Отпарвление сообщении админу об обновлении БД
-    await bot.send_message(user_id_adm, mess)
+    print ("----- Функция reader была вызвана ----")    
     # список листов
     sheet_names = wks.worksheets()   
     places = await  get_all(
@@ -103,3 +100,7 @@ async def reader ():
         else: 
             print(f"Такого старосты нет в базе, зврегистрированные старосты\n{places}")
             print(f"\nЛисты в книге:\n{sheet_names}\n")
+    
+    mess= "Обновление БД - было совершено"
+    #Отпарвление сообщении админу об обновлении БД
+    await bot.send_message(user_id_adm, mess)

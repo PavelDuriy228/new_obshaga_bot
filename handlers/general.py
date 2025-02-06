@@ -18,7 +18,7 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
     await message.answer("Этот бот создан для учета баллов в общежитии", reply_markup= types.ReplyKeyboardRemove())
     await message.answer("Нажмите на эту кнопку, чтобы посмотреть полную статистике по общежитию", reply_markup=total_statistik)
 
-    if not ( unic_code  is None ):
+    if unic_code  :
         # Перевод в int command.args
         unic_code = int(unic_code)
         # Проверка на существование кода в БД

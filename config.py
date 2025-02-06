@@ -14,7 +14,9 @@ Bot_token= os.getenv('token_test') # token_test
 sheet_url = os.getenv('google_table')
 # API бота гугл таблиц
 gc = service_account(filename="api_for_google_sheet.json")
-wks = gc.open(" 🔞 Аттестация 1 2024/2025")
+
+# Пока нет новой ссылки
+wks = gc.open("Qestions&Answers")
 
 
 if Bot_token is None:
@@ -26,7 +28,7 @@ dp = Dispatcher(storage=storage)
 
 user_id_adm = os.getenv('user_id_adm') 
 user_id_eventor = os.getenv('user_id_eventor')
-username_bota = os.getenv('name_test') 
+username_bota = os.getenv('name_test')  # name_test
 
 current_dir= os.path.dirname(os.path.abspath(__file__))
 def get_db_connection():

@@ -11364,3 +11364,309 @@ TypeError: Can't instantiate abstract class InputFile without an implementation 
 2025-01-28 11:14:06,620 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000244AC374F40>)
 2025-01-28 11:14:06,620 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000244AC374F40>) completed
 2025-01-28 11:14:06,824 - INFO - Update id=595973424 is handled. Duration 219 ms by bot id=5530220333
+2025-02-06 13:56:01,195 - DEBUG - Looking up time zone info from registry
+2025-02-06 13:56:01,309 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-06 13:56:01,321 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-06 13:56:01,335 - INFO - Added job "reader" to job store "default"
+2025-02-06 13:56:01,335 - INFO - Added job "actualitic_status3" to job store "default"
+2025-02-06 13:56:01,335 - INFO - Scheduler started
+2025-02-06 13:56:01,335 - INFO - Start polling
+2025-02-06 13:56:01,335 - DEBUG - Looking for jobs to run
+2025-02-06 13:56:01,335 - DEBUG - Next wakeup is due at 2025-02-06 14:26:01.321053+03:00 (in 1799.986015 seconds)
+2025-02-06 13:56:02,179 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
+2025-02-06 13:59:24,507 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8EA5A6FC0>
+2025-02-06 13:59:24,509 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8EA5A6FC0> completed
+2025-02-06 13:59:24,510 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6847C0>, 'SELECT tg_user_id FROM Just_users', ())
+2025-02-06 13:59:24,511 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6847C0>, 'SELECT tg_user_id FROM Just_users', ()) completed
+2025-02-06 13:59:24,513 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA69B240>)
+2025-02-06 13:59:24,513 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA69B240>) completed
+2025-02-06 13:59:24,514 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA69B240>)
+2025-02-06 13:59:24,514 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA69B240>) completed
+2025-02-06 13:59:24,515 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6847C0>)
+2025-02-06 13:59:24,543 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6847C0>) completed
+2025-02-06 13:59:24,546 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647A2A0>
+2025-02-06 13:59:24,547 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647A2A0> completed
+2025-02-06 13:59:24,547 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6844F0>, 'SELECT * FROM Just_users WHERE tg_user_id = ?', (5436149214,))
+2025-02-06 13:59:24,549 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6844F0>, 'SELECT * FROM Just_users WHERE tg_user_id = ?', (5436149214,)) completed
+2025-02-06 13:59:24,549 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA69B240>)
+2025-02-06 13:59:24,550 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA69B240>) completed
+2025-02-06 13:59:24,550 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA69B240>)
+2025-02-06 13:59:24,550 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA69B240>) completed
+2025-02-06 13:59:24,551 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6844F0>)
+2025-02-06 13:59:24,551 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6844F0>) completed
+2025-02-06 13:59:24,743 - INFO - Update id=595973427 is handled. Duration 1327 ms by bot id=5530220333
+2025-02-06 13:59:28,452 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E6479300>
+2025-02-06 13:59:28,453 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E6479300> completed
+2025-02-06 13:59:28,453 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT code_events FROM Just_users WHERE unic_kod = ?', (61956,))
+2025-02-06 13:59:28,454 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT code_events FROM Just_users WHERE unic_kod = ?', (61956,)) completed
+2025-02-06 13:59:28,455 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA61EFC0>)
+2025-02-06 13:59:28,455 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA61EFC0>) completed
+2025-02-06 13:59:28,455 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA61EFC0>)
+2025-02-06 13:59:28,455 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA61EFC0>) completed
+2025-02-06 13:59:28,456 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>)
+2025-02-06 13:59:28,456 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>) completed
+2025-02-06 13:59:28,596 - INFO - Update id=595973428 is handled. Duration 155 ms by bot id=5530220333
+2025-02-06 13:59:41,814 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647A2A0>
+2025-02-06 13:59:41,816 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647A2A0> completed
+2025-02-06 13:59:41,817 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6846D0>, 'SELECT tg_user_id FROM Just_users', ())
+2025-02-06 13:59:41,818 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6846D0>, 'SELECT tg_user_id FROM Just_users', ()) completed
+2025-02-06 13:59:41,818 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA623D40>)
+2025-02-06 13:59:41,819 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA623D40>) completed
+2025-02-06 13:59:41,820 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA623D40>)
+2025-02-06 13:59:41,820 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA623D40>) completed
+2025-02-06 13:59:41,821 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6846D0>)
+2025-02-06 13:59:41,821 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6846D0>) completed
+2025-02-06 13:59:41,824 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647ACA0>
+2025-02-06 13:59:41,824 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647ACA0> completed
+2025-02-06 13:59:41,826 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6845E0>, 'SELECT tg_user_id FROM Starst', ())
+2025-02-06 13:59:41,827 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6845E0>, 'SELECT tg_user_id FROM Starst', ()) completed
+2025-02-06 13:59:41,828 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA623D40>)
+2025-02-06 13:59:41,828 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA623D40>) completed
+2025-02-06 13:59:41,828 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA623D40>)
+2025-02-06 13:59:41,830 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA623D40>) completed
+2025-02-06 13:59:41,830 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6845E0>)
+2025-02-06 13:59:41,830 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6845E0>) completed
+2025-02-06 13:59:41,833 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8EA5A77E0>
+2025-02-06 13:59:41,834 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8EA5A77E0> completed
+2025-02-06 13:59:41,836 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684B80>, 'SELECT * FROM Starst WHERE tg_user_id = ?', (7566236875,))
+2025-02-06 13:59:41,836 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684B80>, 'SELECT * FROM Starst WHERE tg_user_id = ?', (7566236875,)) completed
+2025-02-06 13:59:41,837 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA623D40>)
+2025-02-06 13:59:41,837 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA623D40>) completed
+2025-02-06 13:59:41,838 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA623D40>)
+2025-02-06 13:59:41,838 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA623D40>) completed
+2025-02-06 13:59:41,839 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684B80>)
+2025-02-06 13:59:41,839 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684B80>) completed
+2025-02-06 13:59:42,222 - INFO - Update id=595973429 is handled. Duration 827 ms by bot id=5530220333
+2025-02-06 13:59:45,114 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E6478EA0>
+2025-02-06 13:59:45,115 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E6478EA0> completed
+2025-02-06 13:59:45,116 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6845E0>, 'SELECT unic_kod FROM Events WHERE status = ?', ('active',))
+2025-02-06 13:59:45,116 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6845E0>, 'SELECT unic_kod FROM Events WHERE status = ?', ('active',)) completed
+2025-02-06 13:59:45,117 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA63E9C0>)
+2025-02-06 13:59:45,117 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA63E9C0>) completed
+2025-02-06 13:59:45,118 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA63E9C0>)
+2025-02-06 13:59:45,118 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA63E9C0>) completed
+2025-02-06 13:59:45,118 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6845E0>)
+2025-02-06 13:59:45,119 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6845E0>) completed
+2025-02-06 13:59:45,119 - INFO - Update id=595973430 is not handled. Duration 30 ms by bot id=5530220333
+2025-02-06 13:59:45,120 - ERROR - Cause exception while process update id=595973430 by bot id=5530220333
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\gnomi\OneDrive\Рабочий стол\tgProjects\new_obshaga_bot2\new_obshaga_bot\handlers\eventer_handlers\events.py", line 19, in active_events_handl
+    event =await Event.set_by_id(id=list_nums[page])
+                                    ~~~~~~~~~^^^^^^
+IndexError: list index out of range
+2025-02-06 13:59:51,962 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647ADE0>
+2025-02-06 13:59:51,962 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647ADE0> completed
+2025-02-06 13:59:51,963 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT unic_kod FROM Events', ())
+2025-02-06 13:59:51,964 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT unic_kod FROM Events', ()) completed
+2025-02-06 13:59:51,964 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810AC0>)
+2025-02-06 13:59:51,964 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810AC0>) completed
+2025-02-06 13:59:51,965 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810AC0>)
+2025-02-06 13:59:51,965 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810AC0>) completed
+2025-02-06 13:59:51,965 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>)
+2025-02-06 13:59:51,966 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>) completed
+2025-02-06 13:59:51,967 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647ACA0>
+2025-02-06 13:59:51,967 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647ACA0> completed
+2025-02-06 13:59:51,968 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA685120>, 'SELECT * FROM Events WHERE unic_kod = ?', (1337863,))
+2025-02-06 13:59:51,969 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA685120>, 'SELECT * FROM Events WHERE unic_kod = ?', (1337863,)) completed
+2025-02-06 13:59:51,969 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810AC0>)
+2025-02-06 13:59:51,969 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810AC0>) completed
+2025-02-06 13:59:51,970 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810AC0>)
+2025-02-06 13:59:51,970 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810AC0>) completed
+2025-02-06 13:59:51,970 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA685120>)
+2025-02-06 13:59:51,971 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA685120>) completed
+2025-02-06 13:59:52,258 - INFO - Update id=595973431 is handled. Duration 312 ms by bot id=5530220333
+2025-02-06 14:00:06,856 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647AD40>
+2025-02-06 14:00:06,856 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647AD40> completed
+2025-02-06 14:00:06,857 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT unic_kod FROM Events', ())
+2025-02-06 14:00:06,858 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT unic_kod FROM Events', ()) completed
+2025-02-06 14:00:06,859 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810740>)
+2025-02-06 14:00:06,859 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810740>) completed
+2025-02-06 14:00:06,859 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810740>)
+2025-02-06 14:00:06,859 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810740>) completed
+2025-02-06 14:00:06,860 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>)
+2025-02-06 14:00:06,860 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>) completed
+2025-02-06 14:00:06,862 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647ADE0>
+2025-02-06 14:00:06,863 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647ADE0> completed
+2025-02-06 14:00:06,863 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6849A0>, 'SELECT * FROM Events WHERE unic_kod = ?', (1300528,))
+2025-02-06 14:00:06,864 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6849A0>, 'SELECT * FROM Events WHERE unic_kod = ?', (1300528,)) completed
+2025-02-06 14:00:06,864 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810340>)
+2025-02-06 14:00:06,865 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA810340>) completed
+2025-02-06 14:00:06,865 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810340>)
+2025-02-06 14:00:06,865 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA810340>) completed
+2025-02-06 14:00:06,866 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6849A0>)
+2025-02-06 14:00:06,866 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6849A0>) completed
+2025-02-06 14:00:07,112 - INFO - Update id=595973432 is handled. Duration 265 ms by bot id=5530220333
+2025-02-06 14:00:08,958 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647A2A0>
+2025-02-06 14:00:08,958 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647A2A0> completed
+2025-02-06 14:00:08,959 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT unic_kod FROM Events', ())
+2025-02-06 14:00:08,959 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT unic_kod FROM Events', ()) completed
+2025-02-06 14:00:08,960 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811F40>)
+2025-02-06 14:00:08,960 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811F40>) completed
+2025-02-06 14:00:08,960 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811F40>)
+2025-02-06 14:00:08,960 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811F40>) completed
+2025-02-06 14:00:08,961 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>)
+2025-02-06 14:00:08,961 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>) completed
+2025-02-06 14:00:08,963 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647AE80>
+2025-02-06 14:00:08,963 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647AE80> completed
+2025-02-06 14:00:08,963 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA685030>, 'SELECT * FROM Events WHERE unic_kod = ?', (1007312,))
+2025-02-06 14:00:08,964 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA685030>, 'SELECT * FROM Events WHERE unic_kod = ?', (1007312,)) completed
+2025-02-06 14:00:08,964 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8123C0>)
+2025-02-06 14:00:08,964 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8123C0>) completed
+2025-02-06 14:00:08,965 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8123C0>)
+2025-02-06 14:00:08,965 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8123C0>) completed
+2025-02-06 14:00:08,965 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA685030>)
+2025-02-06 14:00:08,966 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA685030>) completed
+2025-02-06 14:00:09,160 - INFO - Update id=595973433 is handled. Duration 217 ms by bot id=5530220333
+2025-02-06 14:00:10,403 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E6479120>
+2025-02-06 14:00:10,404 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E6479120> completed
+2025-02-06 14:00:10,404 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT unic_kod FROM Events', ())
+2025-02-06 14:00:10,405 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT unic_kod FROM Events', ()) completed
+2025-02-06 14:00:10,406 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8117C0>)
+2025-02-06 14:00:10,406 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8117C0>) completed
+2025-02-06 14:00:10,406 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8117C0>)
+2025-02-06 14:00:10,406 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8117C0>) completed
+2025-02-06 14:00:10,407 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>)
+2025-02-06 14:00:10,407 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>) completed
+2025-02-06 14:00:10,409 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647B060>
+2025-02-06 14:00:10,409 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647B060> completed
+2025-02-06 14:00:10,410 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6849A0>, 'SELECT * FROM Events WHERE unic_kod = ?', (1475435,))
+2025-02-06 14:00:10,410 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6849A0>, 'SELECT * FROM Events WHERE unic_kod = ?', (1475435,)) completed
+2025-02-06 14:00:10,411 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8117C0>)
+2025-02-06 14:00:10,411 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8117C0>) completed
+2025-02-06 14:00:10,412 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8117C0>)
+2025-02-06 14:00:10,412 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8117C0>) completed
+2025-02-06 14:00:10,412 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6849A0>)
+2025-02-06 14:00:10,412 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6849A0>) completed
+2025-02-06 14:00:10,587 - INFO - Update id=595973434 is handled. Duration 202 ms by bot id=5530220333
+2025-02-06 14:00:11,533 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647ACA0>
+2025-02-06 14:00:11,533 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647ACA0> completed
+2025-02-06 14:00:11,534 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT unic_kod FROM Events', ())
+2025-02-06 14:00:11,535 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT unic_kod FROM Events', ()) completed
+2025-02-06 14:00:11,535 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8115C0>)
+2025-02-06 14:00:11,535 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8115C0>) completed
+2025-02-06 14:00:11,535 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8115C0>)
+2025-02-06 14:00:11,535 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8115C0>) completed
+2025-02-06 14:00:11,536 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>)
+2025-02-06 14:00:11,536 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>) completed
+2025-02-06 14:00:11,537 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647B1A0>
+2025-02-06 14:00:11,538 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647B1A0> completed
+2025-02-06 14:00:11,538 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6853F0>, 'SELECT * FROM Events WHERE unic_kod = ?', (1237342,))
+2025-02-06 14:00:11,539 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6853F0>, 'SELECT * FROM Events WHERE unic_kod = ?', (1237342,)) completed
+2025-02-06 14:00:11,539 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8115C0>)
+2025-02-06 14:00:11,540 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA8115C0>) completed
+2025-02-06 14:00:11,540 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8115C0>)
+2025-02-06 14:00:11,540 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA8115C0>) completed
+2025-02-06 14:00:11,541 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6853F0>)
+2025-02-06 14:00:11,541 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6853F0>) completed
+2025-02-06 14:00:11,713 - INFO - Update id=595973435 is handled. Duration 202 ms by bot id=5530220333
+2025-02-06 14:00:12,757 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E6479120>
+2025-02-06 14:00:12,758 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E6479120> completed
+2025-02-06 14:00:12,759 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT unic_kod FROM Events', ())
+2025-02-06 14:00:12,759 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT unic_kod FROM Events', ()) completed
+2025-02-06 14:00:12,760 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA813A40>)
+2025-02-06 14:00:12,760 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA813A40>) completed
+2025-02-06 14:00:12,761 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA813A40>)
+2025-02-06 14:00:12,761 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA813A40>) completed
+2025-02-06 14:00:12,762 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>)
+2025-02-06 14:00:12,762 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>) completed
+2025-02-06 14:00:12,764 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647A200>
+2025-02-06 14:00:12,764 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647A200> completed
+2025-02-06 14:00:12,765 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT * FROM Events WHERE unic_kod = ?', (1310145,))
+2025-02-06 14:00:12,766 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684310>, 'SELECT * FROM Events WHERE unic_kod = ?', (1310145,)) completed
+2025-02-06 14:00:12,766 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA813A40>)
+2025-02-06 14:00:12,767 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA813A40>) completed
+2025-02-06 14:00:12,767 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA813A40>)
+2025-02-06 14:00:12,767 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA813A40>) completed
+2025-02-06 14:00:12,768 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>)
+2025-02-06 14:00:12,768 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684310>) completed
+2025-02-06 14:00:12,945 - INFO - Update id=595973436 is handled. Duration 219 ms by bot id=5530220333
+2025-02-06 14:01:04,344 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8EA5A6FC0>
+2025-02-06 14:01:04,344 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8EA5A6FC0> completed
+2025-02-06 14:01:04,344 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6853F0>, 'SELECT tg_user_id FROM Just_users', ())
+2025-02-06 14:01:04,344 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6853F0>, 'SELECT tg_user_id FROM Just_users', ()) completed
+2025-02-06 14:01:04,344 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811EC0>)
+2025-02-06 14:01:04,344 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811EC0>) completed
+2025-02-06 14:01:04,344 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811EC0>)
+2025-02-06 14:01:04,344 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811EC0>) completed
+2025-02-06 14:01:04,344 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6853F0>)
+2025-02-06 14:01:04,344 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6853F0>) completed
+2025-02-06 14:01:04,344 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647B4C0>
+2025-02-06 14:01:04,344 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647B4C0> completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT tg_user_id FROM Starst', ())
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA684D60>, 'SELECT tg_user_id FROM Starst', ()) completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811EC0>)
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811EC0>) completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811EC0>)
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811EC0>) completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>)
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA684D60>) completed
+2025-02-06 14:01:04,360 - DEBUG - executing <function connect.<locals>.connector at 0x000001F8E647B060>
+2025-02-06 14:01:04,360 - DEBUG - operation <function connect.<locals>.connector at 0x000001F8E647B060> completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6849A0>, 'SELECT * FROM Starst WHERE tg_user_id = ?', (7566236875,))
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001F8EA6849A0>, 'SELECT * FROM Starst WHERE tg_user_id = ?', (7566236875,)) completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811EC0>)
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001F8EA811EC0>) completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811EC0>)
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001F8EA811EC0>) completed
+2025-02-06 14:01:04,360 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6849A0>)
+2025-02-06 14:01:04,360 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001F8EA6849A0>) completed
+2025-02-06 14:01:04,744 - INFO - Update id=595973437 is handled. Duration 1125 ms by bot id=5530220333
+2025-02-06 14:01:40,322 - DEBUG - Looking up time zone info from registry
+2025-02-06 14:01:40,322 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-06 14:01:40,322 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-02-06 14:01:40,322 - INFO - Added job "reader" to job store "default"
+2025-02-06 14:01:40,322 - INFO - Added job "actualitic_status3" to job store "default"
+2025-02-06 14:01:40,322 - INFO - Scheduler started
+2025-02-06 14:01:40,322 - INFO - Start polling
+2025-02-06 14:01:40,338 - DEBUG - Looking for jobs to run
+2025-02-06 14:01:40,338 - DEBUG - Next wakeup is due at 2025-02-06 14:31:40.322874+03:00 (in 1799.984107 seconds)
+2025-02-06 14:01:41,105 - INFO - Run polling for bot @I6apakyda_bot id=5530220333 - 'Barakuda'
