@@ -5,7 +5,7 @@ async def replacer(table:str, column:str, condition_column:str, condition_value,
     getted_value = await get_value_by_condition(
         table=table, column=column, condition_column=condition_column,
         condition_value=condition_value
-    )    
+    )        
     if getted_value == "None" or getted_value is None: getted_value = ""
 
     if value_for_replace !='_52nothing52_': new_value = str(getted_value).replace(str(value_for_replace), str(value_to_replace))

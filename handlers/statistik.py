@@ -4,6 +4,7 @@ from db import (
 )
 from other_func import sort_list0
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
+from keyboards.strelki import create_strelki
 
 router= Router ()
 
@@ -23,22 +24,13 @@ async def statistika (callback: CallbackQuery):
         if indx >= line_count: break
         new_text+=f"{splited_text[indx]}\n"
     
-    # Если есть возможность двигаться тольок назад
-    if page+50 >=line_count and page-50 >= 0:
-        keyboard.append([
-            InlineKeyboardButton(text="⬅️", callback_data=f"full_statik:{page-50}")    
-        ])
-    # Если есть возможность двигаться только вперед        
-    if page + 50 <line_count and page - 50 <0:
-        keyboard.append([
-            InlineKeyboardButton(text="➡️", callback_data=f"full_statik:{page+50}")    
-        ])
-    # Если есть возможность двигаться вправо и влево
-    if page + 50 <line_count and page - 50 >=0:
-        keyboard.append([
-            InlineKeyboardButton(text="⬅️", callback_data=f"full_statik:{page-50}"),
-            InlineKeyboardButton(text="➡️", callback_data=f"full_statik:{page+50}")            
-        ])
+    strelki = await create_strelki(
+        len_list=line_count,
+        callback_dataU='full_statik',
+        page=page, range=50
+    )
+    if strelki: keyboard.append(strelki)
+    
     serfing = InlineKeyboardMarkup(inline_keyboard=keyboard)
 
     await callback.message.edit_text(

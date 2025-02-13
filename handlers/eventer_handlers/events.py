@@ -4,6 +4,7 @@ from db import (
 )
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from keyboards import home_eventor
+from keyboards.strelki import create_strelki
 
 
 rt = Router()
@@ -25,24 +26,13 @@ async def active_events_handl(callback: CallbackQuery):
                 InlineKeyboardButton(text="Внести правки", callback_data=f"edit_event:{list_nums[page]}")        
         ])
 
+        strelki = await create_strelki(
+            len_list=len(list_nums),
+            callback_dataU="active_events",
+            page=page
+        )
+        if strelki: keyboard.append(strelki)
 
-        # В вперед и назад
-        if  page +1 < len(list_nums) and page-1 > -1:
-            keyboard.append([
-                InlineKeyboardButton(text="⬅️", callback_data=f"active_events:{page-1}"),
-                InlineKeyboardButton(text="➡️", callback_data=f"active_events:{page+1}")        
-            ])
-        
-        # ТОлько вперед
-        if page +1 < len(list_nums) and page-1 < 0:
-            keyboard.append([
-                InlineKeyboardButton(text="➡️", callback_data=f"active_events:{page+1}")        
-            ])
-        # ТОлько назад
-        if page +1 >= len(list_nums) and page-1 > -1:
-            keyboard.append([
-                InlineKeyboardButton(text="⬅️", callback_data=f"active_events:{page-1}")        
-            ])
         markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
         await callback.message.edit_text(text = text, reply_markup=markup)
     except:
@@ -67,24 +57,13 @@ async def full_events(callback: CallbackQuery):
                 InlineKeyboardButton(text="Участники", callback_data=f"followers:{list_nums[page]}")            
         ])
 
-
-        # В вперед и назад
-        if  page +1 < len(list_nums) and page-1 > -1:
-            keyboard.append([
-                InlineKeyboardButton(text="⬅️", callback_data=f"all_events:{page-1}"),
-                InlineKeyboardButton(text="➡️", callback_data=f"all_events:{page+1}")        
-            ])
-        
-        # ТОлько вперед
-        if page +1 < len(list_nums) and page-1 < 0:
-            keyboard.append([
-                InlineKeyboardButton(text="➡️", callback_data=f"all_events:{page+1}")        
-            ])
-        # ТОлько назад
-        if page +1 >= len(list_nums) and page-1 > -1:
-            keyboard.append([
-                InlineKeyboardButton(text="⬅️", callback_data=f"all_events:{page-1}")        
-            ])
+        strelki = await create_strelki(
+            len_list=len(list_nums),
+            callback_dataU="all_events",
+            page=page
+        )
+        keyboard.append(strelki)
+                
         markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
         await callback.message.edit_text(text = text, reply_markup=markup)
     except:

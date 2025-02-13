@@ -42,7 +42,7 @@ class Event ():
             [InlineKeyboardButton(text="Участвовать", callback_data=f"join:{self.id}")]
         ]) 
         for tg_id in list_tg_id:
-            if tg_id:
+            if tg_id and tg_id!="-1" and tg_id!=-1:
                 try:
                     await bot.send_message(
                         chat_id= tg_id, text= f"Новое мепроприятие:\n{self.text}",

@@ -4,6 +4,7 @@ from db import (
     User, get_all_if
 )
 from keyboards import start_inl_kbs
+from keyboards.strelki import create_strelki
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 
 router = Router()
@@ -28,9 +29,9 @@ async def star_students (callback: CallbackQuery):
     # Получение кода
     unic_code = int(cortege[1])
     # Получение страницы
-    page=int(cortege[2])
+    index=int(cortege[2])
     # index юзера в общем списке
-    index = int(cortege[3])
+    page = int(cortege[3])
     print(f"unic_code: {unic_code} \npage: {page}, \nindex: {index}")
     # Список всех студентов старосты
     studnts = await get_all_if(
@@ -52,41 +53,29 @@ async def star_students (callback: CallbackQuery):
         InlineKeyboardButton(text="🔄Очистить ячейку", callback_data=f"clear_tg_id:{user.unic_kod}")
     ])
     
+    # Создание кнопок для каждого юзера
     for page2 in range(page, page+6, 2):
         if len(studnts)-1> page2:
             keyboard.append([
                 # Кортедж коллбэка начало:код_старосты:текущая_страница:индекс_конкретного_юзера
-                InlineKeyboardButton(text=f"{studnts[page2]}", callback_data=f'my_students:{unic_code}:{page}:{page2}'),
-                InlineKeyboardButton(text=f"{studnts[page2+1]}", callback_data=f'my_students:{unic_code}:{page}:{page2+1}')
+                InlineKeyboardButton(text=f"{studnts[page2]}", callback_data=f'my_students:{unic_code}:{page2}:{page}'),
+                InlineKeyboardButton(text=f"{studnts[page2+1]}", callback_data=f'my_students:{unic_code}:{page2+1}:{page}')
             ])            
         if len(studnts)-1==page2:
             keyboard.append([
-                InlineKeyboardButton(text=f"{studnts[page2]}", callback_data=f'my_students:{unic_code}:{page}:{page2}'),
+                InlineKeyboardButton(text=f"{studnts[page2]}", callback_data=f'my_students:{unic_code}:{page2}:{page}'),
             ])
             break
         
-    action = 0
-    nazad = page-6
-    if nazad<0:
-        nazad =0
-        keyboard.append([
-            InlineKeyboardButton(text="➡️", callback_data=f"my_students:{unic_code}:{page+6}:{page}")    
-        ])
-        action = 1
-    vper = page +6
-    if vper > len(studnts):
-        vper = page
-        keyboard.append([
-            InlineKeyboardButton(text="⬅️", callback_data=f"my_students:{unic_code}:{page-6}:{page}")
-        ])
-        action = 1
-
-    #print(f"Назад:{nazad}\nВперед{vper}")
-    if action == 0:
-        keyboard.append([
-            InlineKeyboardButton(text="⬅️", callback_data=f"my_students:{unic_code}:{nazad}:{page}"),
-            InlineKeyboardButton(text="➡️", callback_data=f"my_students:{unic_code}:{vper}:{page}")        
-        ])
+        
+    # cd:code_strst:st_page:page_for_move
+    strelki =await create_strelki(
+        len_list=len(studnts),
+        callback_dataU = f"my_students:{unic_code}:{page}",
+        page= page, range= 6
+    )
+    if strelki: keyboard.append(strelki)
+    
     serfing = InlineKeyboardMarkup(inline_keyboard=keyboard)
 
     await callback.message.edit_text(text=text, reply_markup=serfing)

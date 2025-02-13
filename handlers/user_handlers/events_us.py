@@ -2,6 +2,7 @@ from aiogram import  Router
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from db import Event, get_value_by_condition
 from other_func import replacer
+from keyboards.strelki import create_strelki
 
 router = Router()
 
@@ -40,14 +41,16 @@ async def joining (callback: CallbackQuery):
         table="Just_users",
         column='code_events',
         condition_column='unic_kod', condition_value=id  
-    ))
-    page= int(callback.data.split(":")[2])
+    )).strip()
+    page= int(callback.data.split(":")[2])    
     keyboard = []
     keyboard.append(
         [InlineKeyboardButton(text="🏠Домой", callback_data=f"home_stud:{id}")]
-    )
-    list_id = [code.strip() for code in event_codes.split(" ")]    
-    if list_id:
+    )    
+
+    if event_codes != "None":        
+        list_id = [code.strip() for code in event_codes.split(" ") if code != " "]  
+        print(list_id)          
         try:            
             event = await Event.set_by_id(id=list_id[page])
             text = event.text            
@@ -56,25 +59,16 @@ async def joining (callback: CallbackQuery):
             )
         except Exception as e:
             text="Возможно такого мероприятия не существует"
-                
-        # Вперед и назад
-        if page+1<len(list_id) and page-1>-1:
-            keyboard.append([
-                InlineKeyboardButton(text="⬅️", callback_data=f"users_events:{id}:{page-1}"),
-                InlineKeyboardButton(text="➡️", callback_data=f"users_events:{id}:{page+1}")       
-            ])
-        # ТОлько вперед
-        if page +1 < len(list_id) and page-1 < 0:
-            keyboard.append([
-                InlineKeyboardButton(text="➡️", callback_data=f"users_events:{id}:{page+1}")        
-            ])
-        # ТОлько назад
-        if page +1 >= len(list_id) and page-1 > -1:
-            keyboard.append([
-                InlineKeyboardButton(text="⬅️", callback_data=f"users_events:{id}:{page-1}")        
-            ])            
+        
+        strelki = await create_strelki(
+            len_list=len(list_id), 
+            callback_dataU=f"users_events:{id}",
+            page= page
+        )
+        if strelki: keyboard.append(strelki)
+        
     else:
-        text="None"
+        text="записей на мероприятия нет"
     markup = InlineKeyboardMarkup(inline_keyboard=keyboard)
     await callback.message.edit_text(text=text,reply_markup= markup)
 
