@@ -5,18 +5,19 @@ from aiogram import Dispatcher, Bot
 import sqlite3
 from gspread import service_account 
 
-load_dotenv(find_dotenv())
+load_dotenv(find_dotenv(), override=True)
 
-Bot_token= os.getenv('token_test') # token_test
+Bot_token= os.getenv('token_test') # token_test token_master
 
 
 # Получение ссылки на google таблицу
 sheet_url = os.getenv('google_table')
+print(sheet_url)
 # API бота гугл таблиц
 gc = service_account(filename="api_for_google_sheet.json")
 
 # Пока нет новой ссылки
-wks = gc.open("Qestions&Answers")
+wks = gc.open("🔞Аттестация 2 2025/2025")
 
 
 if Bot_token is None:
@@ -28,7 +29,7 @@ dp = Dispatcher(storage=storage)
 
 user_id_adm = os.getenv('user_id_adm') 
 user_id_eventor = os.getenv('user_id_eventor')
-username_bota = os.getenv('name_test')  # name_test
+username_bota = os.getenv('name_test')  #  name_master
 
 current_dir= os.path.dirname(os.path.abspath(__file__))
 def get_db_connection():

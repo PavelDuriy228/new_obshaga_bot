@@ -18,7 +18,7 @@ async def reader ():
 
         # Получение названия всех колонок с мероприятиями в переменной title,
         # путем среза юзерских колонок 
-        title = sheet.row_values(1)        
+        title = sheet.row_values(1)                
         title = title[5:]
         haper = 0
         if title[-1]=="ИТОГО": 
@@ -46,7 +46,7 @@ async def reader ():
             for row in rows :      
                 if str(row[1]) != "" and str(row[2]) != "":
                     name = f"{str(row[1]).strip()}: {str(row[2]).strip()}"
-                    print(f"name: {name}")
+                    # print(f"name: {name}")
                     all_count = 0
                     row= row[5:]
                     if haper==1: row= row[:-1]
