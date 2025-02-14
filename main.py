@@ -7,7 +7,7 @@ from config import dp, bot, user_id_adm
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 # Роутеры 
 from handlers import *
-from db import reader_gs, actualitic_status3
+from db import reader_gs, actualitic_status3, reader_old_table
 from logging_hand import loging_router
 
 # Включение ввсех роутеров
@@ -35,6 +35,7 @@ async def main(message: types.Message = None):
         # Назначение выполнение функции чтения данных с таблицы
         scheduler = AsyncIOScheduler()
         scheduler.add_job(reader_gs, 'cron', hour=3, minute =20)
+        scheduler.add_job(reader_old_table, 'cron', hour=3, minute =20)
         scheduler.add_job(actualitic_status3, 'interval', minutes = 30)
         scheduler.start()
         if scheduler:

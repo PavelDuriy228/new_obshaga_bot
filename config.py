@@ -12,12 +12,13 @@ Bot_token= os.getenv('token_test') # token_test token_master
 
 # Получение ссылки на google таблицу
 sheet_url = os.getenv('google_table')
-print(sheet_url)
+sheet_url_old = os.getenv('old_google_table')
 # API бота гугл таблиц
 gc = service_account(filename="api_for_google_sheet.json")
 
 # Пока нет новой ссылки
 wks = gc.open("🔞Аттестация 2 2025/2025")
+wks2 = gc.open(" 🔞 Аттестация 1 2024/2025")
 
 
 if Bot_token is None:

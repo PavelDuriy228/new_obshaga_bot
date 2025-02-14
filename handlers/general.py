@@ -4,7 +4,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from .sup_func import set_id_new_user, chosing_role
 from keyboards import adm_menu_markup, eventor_markup, total_statistik
-from db import reader_gs
+from db import reader_gs, reader_old_table
 
 router = Router()
 
@@ -57,6 +57,7 @@ async def h_feedback(message: types.Message):
 async def updating_db_handl(message: types.Message):
     if str(message.from_user.id) == user_id_adm:
         await reader_gs()
+        await reader_old_table()
         await message.answer(
             text="обновление базы данных завршено"
         )
