@@ -47,7 +47,7 @@ async def star_students (callback: CallbackQuery):
     )
     text = f"{user.name}\nБаллы:{user.count_b}\n\nИстория:{user.comment}"
 
-    keyboard = []    
+    keyboard = []        
     keyboard.append([
         InlineKeyboardButton(text="⬇️Получить его ссылку", callback_data=f'stud_url:{user.unic_kod}'),    
         InlineKeyboardButton(text="🔄Очистить ячейку", callback_data=f"clear_tg_id:{user.unic_kod}")
