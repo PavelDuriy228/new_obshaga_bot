@@ -7,7 +7,7 @@ from gspread import service_account
 
 load_dotenv(find_dotenv(), override=True)
 
-Bot_token= os.getenv('token_master') # token_test token_master
+Bot_token= os.getenv('token_test') # token_test token_master
 
 
 # Получение ссылки на google таблицу
@@ -30,7 +30,7 @@ dp = Dispatcher(storage=storage)
 
 user_id_adm = os.getenv('user_id_adm') 
 user_id_eventor = os.getenv('user_id_eventor')
-username_bota = os.getenv('name_master')  #  name_master
+username_bota = os.getenv('name_test')  #  name_master name_test
 
 current_dir= os.path.dirname(os.path.abspath(__file__))
 def get_db_connection():

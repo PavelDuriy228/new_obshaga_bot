@@ -55,10 +55,10 @@ async def etagi_inl(
     ]
     for etag in range(1, len(etagi), 2):
         if etag+1< len(etagi):
-            keyboard.append(
-                [InlineKeyboardButton(text=f"{etagi[etag]}", callback_data=f"view_studs:{id_etag[0]}:0:0")],
-                [InlineKeyboardButton(text=f"{etagi[etag+1]}", callback_data=f"view_studs:{id_etag[0]}:0:0")]
-            )
+            keyboard.append([
+                InlineKeyboardButton(text=f"{etagi[etag]}", callback_data=f"view_studs:{id_etag[0]}:0:0"),
+                InlineKeyboardButton(text=f"{etagi[etag+1]}", callback_data=f"view_studs:{id_etag[0]}:0:0")
+            ])
         else:
             keyboard.append(
                 [InlineKeyboardButton(text=f"{etagi[etag]}", callback_data=f"view_studs:{id_etag[0]}:0:0")]

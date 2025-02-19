@@ -14,7 +14,7 @@ from logging_hand import loging_router
 routers = [
     gen_router, gen_adm_router, edit_strst_routers, gen_star_router, star_router2,
     statistik_router, gen_user_router, loging_router, gen_event_rt, funcs_event_rt,
-    events_rt, event_user_router
+    events_rt, event_user_router, gen_router2
 ]
 
 for cur_router in routers:
