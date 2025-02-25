@@ -11,7 +11,7 @@ router = Router()
 async def handl_of_choice_etag(callback: CallbackQuery):
     list_etags = await get_all(
         table="Starst",
-        column="place"
+        column="place"# сосочки Булата  Пирамидки Ани
     )
     list_id_etags = await get_all(
         table="Starst",

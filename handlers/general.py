@@ -47,7 +47,7 @@ async def father_handler (message: types.Message):
     )
 
 @router.message(Command("feedback"))
-async def h_feedback(message: types.Message):
+async def h_feedback(message: types.Message):    
     await message.answer(
         text="Если возникли какие либо трудности или есть идеи,\
         пишите мне в лс @I_Pavel_Durov, я обязательно отвечу"
