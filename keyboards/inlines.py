@@ -50,18 +50,19 @@ async def etagi_inl(
     id_etag:list[int]
 )->InlineKeyboardMarkup:
     keyboard = [
+        [InlineKeyboardButton(text="🔝Топ студентов", callback_data="full_statik:0")],
         # последний флаг 25  предназначен для простых пользователей
         [InlineKeyboardButton(text=f"{etagi[0]}", callback_data=f"view_studs:{id_etag[0]}:0:0")]
     ]
     for etag in range(1, len(etagi), 2):
         if etag+1< len(etagi):
             keyboard.append([
-                InlineKeyboardButton(text=f"{etagi[etag]}", callback_data=f"view_studs:{id_etag[0]}:0:0"),
-                InlineKeyboardButton(text=f"{etagi[etag+1]}", callback_data=f"view_studs:{id_etag[0]}:0:0")
+                InlineKeyboardButton(text=f"{etagi[etag]}", callback_data=f"view_studs:{id_etag[etag]}:0:0"),
+                InlineKeyboardButton(text=f"{etagi[etag+1]}", callback_data=f"view_studs:{id_etag[etag+1]}:0:0")
             ])
         else:
             keyboard.append(
-                [InlineKeyboardButton(text=f"{etagi[etag]}", callback_data=f"view_studs:{id_etag[0]}:0:0")]
+                [InlineKeyboardButton(text=f"{etagi[etag]}", callback_data=f"view_studs:{id_etag[etag]}:0:0")]
             )
     markup = InlineKeyboardMarkup(
         inline_keyboard=keyboard
