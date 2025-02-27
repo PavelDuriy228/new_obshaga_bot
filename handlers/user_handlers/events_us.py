@@ -17,7 +17,7 @@ async def joining (callback: CallbackQuery):
     
     #  ДОбавлет новое значение к уже сущщетсвующим (В столбце с ивентами добавляет ид нового)
     await replacer(
-        table="Just_users", column="code_events", condition_column='tg_user_id',
+        table="Users", column="codes_events", condition_column='tg_id',
         condition_value=user_id, value_for_replace='_52nothing52_', value_to_replace=id
     )
     #  ДОбавлет новое значение к уже сущщетсвующим (В столбце с ивентами добавляет ид нового
@@ -36,11 +36,11 @@ async def joining (callback: CallbackQuery):
 
 @router.callback_query(lambda c: c.data.startswith("users_events:"))
 async def joining (callback: CallbackQuery):
-    id = int(callback.data.split(":")[1])
+    id = callback.from_user.id
     event_codes = str (await get_value_by_condition(
-        table="Just_users",
-        column='code_events',
-        condition_column='unic_kod', condition_value=id  
+        table="Users",
+        column='codes_events',
+        condition_column='tg_id', condition_value=id  
     )).strip()
     page= int(callback.data.split(":")[2])    
     keyboard = []
@@ -74,13 +74,13 @@ async def joining (callback: CallbackQuery):
 
 @router.callback_query(lambda c: c.data.startswith("user_otmena:"))
 async def joining (callback: CallbackQuery):
-    id = int(callback.data.split(":")[1])
+    id = callback.from_user.id
     id_event= int(callback.data.split(":")[2])
 
     event = await Event.set_by_id(id=id_event)
     # Замена в таблице Just_users в колонке с его ивентами id выбранного id на пустоту
     await replacer(
-        table="Just_users", column="code_events", condition_column='unic_kod',
+        table="Users", column="codes_events", condition_column='tg_id',
         condition_value=id, value_for_replace=id_event, value_to_replace=''
     )
     # ЗАмена в таблице ивентов id следящего за мероприятием юзера на ""

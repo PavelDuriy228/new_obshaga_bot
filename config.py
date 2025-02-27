@@ -72,3 +72,11 @@ CREATE TABLE IF NOT EXISTS Events (
     status TEXT      
 )
 ''')
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS Users (
+    id INT,
+    tg_id INT,
+    tg_username TEXT,
+    codes_events TEXT
+)
+''')

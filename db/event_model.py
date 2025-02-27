@@ -36,10 +36,10 @@ class Event ():
     
     async def send_for_all (self):
         list_tg_id = await get_all(
-            table="Just_users", column="tg_user_id"
+            table="Users", column="tg_id"
         )
         event_joining =InlineKeyboardMarkup(inline_keyboard=[
-            [InlineKeyboardButton(text="Участвовать", callback_data=f"join:{self.id}")]
+            [InlineKeyboardButton(text="Участвовать", callback_data=f"join:{self.id}")] ##
         ]) 
         for tg_id in list_tg_id:
             if tg_id and tg_id!="-1" and tg_id!=-1:

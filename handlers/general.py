@@ -1,10 +1,11 @@
 from aiogram import types, Router
 from config import user_id_adm, user_id_eventor
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from .sup_func import set_id_new_user, chosing_role
 from keyboards import adm_menu_markup, eventor_markup, total_statistik
-from db import reader_gs, reader_old_table
+from db import reader_gs, reader_old_table, get_all, create_new_user3
 
 router = Router()
 
@@ -31,7 +32,26 @@ async def h_start (message:types.Message, state:FSMContext, command: CommandStar
         else: await message.answer("Неверный код старта")
     
     cur_user = await chosing_role(cur_tg_id=cur_user_id)
-    if not (cur_user is None):
+    list_tg_id = await get_all(
+        table='Users', column='tg_id'
+    )
+    if cur_user_id not in list_tg_id:
+        print(
+            "Этого пользователя нет в базе"
+        )
+        await create_new_user3(
+            tg_id=cur_user_id,
+            tg_username= message.from_user.username
+        )
+    
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[            
+        [InlineKeyboardButton(text="Мои мепрориятия", callback_data=f"users_events:{cur_user_id}:0")]
+    ])
+    await message.answer(
+        'Здравствуйте, выберите вот ваше меню действий',
+        reply_markup=keyboard
+    )
+    if cur_user is not None:
         # Приветственное сообщение с менюшкой
         await cur_user.say_my_name(message=message)
     if str(cur_user_id) == user_id_adm:
