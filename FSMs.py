@@ -14,6 +14,7 @@ class NewEvent(StatesGroup):
     name = State ()
     description = State ()
     date = State()
+    time_to_send = State()
 
 class ForEditTime(StatesGroup):
     id = State()

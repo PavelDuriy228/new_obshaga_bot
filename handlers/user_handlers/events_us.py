@@ -48,8 +48,8 @@ async def joining (callback: CallbackQuery):
         [InlineKeyboardButton(text="🏠Домой", callback_data=f"home_stud:{id}")]
     )    
 
-    if event_codes != "None":        
-        list_id = [code.strip() for code in event_codes.split(" ") if code != " "]  
+    if event_codes !="None": list_id = [code.strip() for code in event_codes.split(" ") if code != ""]  
+    if list_id and len(list_id)>0:                
         print(list_id)          
         try:            
             event = await Event.set_by_id(id=list_id[page])

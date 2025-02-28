@@ -3,8 +3,7 @@ from aiogram import types
 import logging
 import asyncio
 import traceback
-from config import dp, bot, user_id_adm
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from config import dp, bot, user_id_adm, scheduler
 # Роутеры 
 from handlers import *
 from db import reader_gs, actualitic_status3, reader_old_table
@@ -32,10 +31,10 @@ async def main(message: types.Message = None):
         #     level=logging.DEBUG,  # Уровень логирования (DEBUG, INFO, WARNING, ERROR, CRITICAL)
         #     format='%(asctime)s - %(levelname)s - %(message)s'  # Формат сообщений
         # )
-        # Назначение выполнение функции чтения данных с таблицы
-        scheduler = AsyncIOScheduler()
+        # Назначение выполнение функции чтения данных с таблицы        
         scheduler.add_job(reader_gs, 'cron', hour=3, minute =20)
         scheduler.add_job(reader_old_table, 'cron', hour=3, minute =20)
+        # потестить
         scheduler.add_job(actualitic_status3, 'interval', minutes = 30)
         scheduler.start()
         if scheduler:

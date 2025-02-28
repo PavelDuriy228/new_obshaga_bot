@@ -3,6 +3,7 @@ from rapidfuzz import  process
 from db import get_all, get_row_by_condition
 
 async def splitter_time(date):
+    print(date)
     checked = await checking_time(str(date))
     if checked:
         n_date = str(date).split(" ")[0].strip()

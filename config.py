@@ -4,6 +4,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram import Dispatcher, Bot
 import sqlite3
 from gspread import service_account 
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 load_dotenv(find_dotenv(), override=True)
 
@@ -36,6 +37,8 @@ current_dir= os.path.dirname(os.path.abspath(__file__))
 def get_db_connection():
     db_path = os.path.join(current_dir, 'bali.db')
     return db_path
+
+scheduler = AsyncIOScheduler()
 
 conn = sqlite3.connect(get_db_connection())
 cursor = conn.cursor()

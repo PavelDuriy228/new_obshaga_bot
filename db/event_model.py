@@ -5,7 +5,8 @@ from db import (
 )
 from config import bot
 from loggers.logs1 import log_error_w_sending
-from aiogram.types import  InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import  InlineKeyboardButton, InlineKeyboardMarkup, Message
+from aiogram import types
 from other_func import actualitic_date
 
     # unic_kod INT,
@@ -34,25 +35,32 @@ class Event ():
         event = cls(name, date, description, time)        
         return event
     
-    async def send_for_all (self):
+    async def send_for_all (self, message: Message):
         list_tg_id = await get_all(
             table="Users", column="tg_id"
         )
         event_joining =InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="Участвовать", callback_data=f"join:{self.id}")] ##
         ]) 
+        print("Вызвана рассылка")
         for tg_id in list_tg_id:
-            if tg_id and tg_id!="-1" and tg_id!=-1:
+            if tg_id and tg_id!="-1" and tg_id!=-1:                
                 try:
+                    await message.copy_to(
+                        chat_id=tg_id
+                    )
                     await bot.send_message(
-                        chat_id= tg_id, text= f"Новое мепроприятие:\n{self.text}",
+                        chat_id= tg_id, text= f"Новое мепроприятие:\n<{self.name}> \nВ <{self.date}:{self.time}>",
                         reply_markup=event_joining
                     )
                 except Exception as e:
                     await log_error_w_sending(cur_id=tg_id, error=e)
     
     async def send_to_followers(self,text: str):   
-        list_f =  self.joined_users_id.split(" ")
+        print(self.joined_users_id)
+        if self.joined_users_id:
+            list_f =  self.joined_users_id.split(" ")
+            list_f = [x for x in list_f if x!=""]
         if list_f:
             for cur_id in list_f:
                 try:
