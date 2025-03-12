@@ -32,3 +32,6 @@ class MesToFolls(StatesGroup):
 
 class SearchName(StatesGroup):
     name = State()
+
+class ForLaplas(StatesGroup):
+    values = State()
