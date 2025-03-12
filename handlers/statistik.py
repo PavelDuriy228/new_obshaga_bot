@@ -3,7 +3,8 @@ from db import (
     get_rows_for_statik
 )
 from other_func import sort_list0
-from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
+from aiogram.types import CallbackQuery, InlineKeyboardMarkup
+from aiogram.enums import ParseMode
 from keyboards.strelki import create_strelki
 
 router= Router ()
@@ -34,6 +35,7 @@ async def statistika (callback: CallbackQuery):
     serfing = InlineKeyboardMarkup(inline_keyboard=keyboard)
 
     await callback.message.edit_text(
-        text=new_text, reply_markup= serfing
+        text=new_text, reply_markup= serfing,
+        parse_mode=ParseMode.HTML
     )
     

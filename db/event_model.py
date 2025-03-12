@@ -65,7 +65,10 @@ class Event ():
             for cur_id in list_f:
                 try:
                     cur_id.strip()
-                    if cur_id != "None": await bot.send_message(chat_id=int(cur_id), text= text)
+                    if cur_id != "None": await bot.send_message(                        
+                        chat_id=int(cur_id), text= text,
+                        parse_mode="html"
+                    )
                 except Exception as e:
                     await log_error_w_sending(cur_id=cur_id, error=e)
 

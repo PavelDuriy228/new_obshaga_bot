@@ -21,10 +21,19 @@ async def actualitic_status3 ():
             print(f'tot: hours: {total_hours}')
             
             if total_hours < 1:
-                await cls_event.send_to_followers(text=f"До мероприятия ''{event[1]}'' осталось менее часа")            
+                await cls_event.send_to_followers(
+                    text=f'До мероприятия <b>{event[1]}</b> \
+                        <span class="tg-spoiler">осталось менее часа</span>'                    
+                )            
             
             elif 4 < total_hours < 5:
-                await cls_event.send_to_followers(text=f"До мероприятия ''{event[1]}'' осталось менее 5 часов")            
+                await cls_event.send_to_followers(
+                    text=f'До мероприятия <b>{event[1]}</b> \
+                        <span class="tg-spoiler">осталось менее 5 часов</span>'
+                    )            
             
             elif 11 < total_hours < 12:
-                await cls_event.send_to_followers(text=f"До мероприятия ''{event[1]}'' осталось менее 12 часов")            
+                await cls_event.send_to_followers(
+                    text=f'До мероприятия <b>{event[1]}</b> \
+                        <span class="tg-spoiler">осталось менее 12 часов</span>'
+                )            

@@ -10,6 +10,6 @@ async def sort_list0 (users):
     text = ''
     i=1
     for name, count in sorted_worder_users.items():
-        text +=f"{i}. {name} - {count} б.\n"
+        text +=f"{i}. {name} - <b>{count} баллов.</b>\n"
         i+=1
     return text
