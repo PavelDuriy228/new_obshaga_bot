@@ -4,7 +4,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext  # Импортируйте FSMContext
 from .sup_func import set_id_new_user, chosing_role
-from keyboards import adm_menu_markup, eventor_markup, total_statistik
+from keyboards import adm_menu_markup, eventor_markup, total_statistik, mini_games
 from db import reader_gs, reader_old_table, get_all, create_new_user3
 
 router = Router()
@@ -81,3 +81,10 @@ async def updating_db_handl(message: types.Message):
         await message.answer(
             text="обновление базы данных завршено"
         )
+
+@router.message(Command("probability"))
+async def probable(message: types.Message):
+    await message.answer(
+        "Выберите игру",
+        reply_markup=mini_games
+    )

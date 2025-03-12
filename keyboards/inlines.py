@@ -1,4 +1,5 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+import random
 
 adm_menu_markup = InlineKeyboardMarkup(inline_keyboard=[
     [
@@ -44,6 +45,28 @@ async def GetMenuForEdit(id):
 home_eventor = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="🏠Домой", callback_data="eventor_menu")]
 ])
+
+mini_games= InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton(text="Шкатулка", callback_data="shkatulka"),
+        InlineKeyboardButton(text="По Лапласу", callback_data="laplas")
+    ]
+])
+
+async def create_shkatulki()->InlineKeyboardMarkup:
+    vars = ['win_shk:0', 'win_shk:1', 'win_shk:0']
+    random.shuffle(vars)
+    keyboard = [
+        [
+            InlineKeyboardButton(text="🎁", callback_data=f"{vars[0]}"),
+            InlineKeyboardButton(text="🎁", callback_data=f"{vars[1]}")
+        ],
+        [InlineKeyboardButton(text="🎁", callback_data=f"{vars[2]}")]
+    ]    
+    markup = InlineKeyboardMarkup(
+        inline_keyboard=keyboard
+    )
+    return markup
 
 async def etagi_inl(
     etagi:list[str],

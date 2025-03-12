@@ -5,6 +5,7 @@ from .statistik import router as statistik_router
 from .user_handlers import gen_user_router, event_user_router
 from .eventer_handlers import funcs_event_rt, events_rt, gen_event_rt
 from .general2 import router as gen_router2
+from .other_handlers import router as proba_router
 
 __all__=[    
     'gen_router',
@@ -17,5 +18,6 @@ __all__=[
     'funcs_event_rt' ,
     'events_rt', 'gen_event_rt',
     'event_user_router',
-    'gen_router2'
+    'gen_router2',
+    'proba_router'
 ]

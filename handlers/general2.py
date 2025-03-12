@@ -1,8 +1,7 @@
 from aiogram import Router
 from keyboards import etagi_inl
-from keyboards.strelki import create_strelki
-from db import get_all, get_all_if, User
-from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
+from db import get_all
+from aiogram.types import CallbackQuery
 from other_func.viewer_studs import viewer_studs
 
 router = Router()
