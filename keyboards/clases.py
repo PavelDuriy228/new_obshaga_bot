@@ -15,7 +15,7 @@ class start_inl_kbs():
     async def user_markup(self) -> InlineKeyboardMarkup:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="📈Статистка", callback_data=f"u_statistik:{self.unic_code}")],
-            [InlineKeyboardButton(text="Мои мепрориятия", callback_data=f"users_events:{self.unic_code}:0")]
+            [InlineKeyboardButton(text="Мои мероприятия", callback_data=f"users_events:{self.unic_code}:0")]
         ])                
         return keyboard
     async def home_stud(self)-> InlineKeyboardMarkup:

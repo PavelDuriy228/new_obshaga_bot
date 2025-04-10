@@ -1,22 +1,13 @@
 from db import (
-    get_row_by_condition, get_all,
+    get_row_by_condition, 
     execute_write_query, get_value_by_condition,
-    update_value, get_all_if, create_code, create_new_user2
+    update_value, create_code
 )
 from config import bot
 from loggers.logs1 import log_error_w_sending
 from aiogram.types import  InlineKeyboardButton, InlineKeyboardMarkup, Message
-from aiogram import types
-from other_func import actualitic_date
-
-    # unic_kod INT,
-    # event_name TEXT,
-    # even_desription MEDIUMTEXT,               
-    # event_date DATE,
-    # event_time TIME,
-    # joined_users_id MEDIUMTEXT,
-    # joined_users_username MEDIUMTEXT,
-    # status TEXT     
+from other_func import actualitic_date, send_for_all_func
+  
 
 class Event ():
     def __init__(self, name, date, description,time, id: int = 0, joined_users_id: str=None, joined_users_username: str=None, status: str=None):
@@ -36,25 +27,17 @@ class Event ():
         return event
     
     async def send_for_all (self, message: Message):
-        list_tg_id = await get_all(
-            table="Users", column="tg_id"
-        )
         event_joining =InlineKeyboardMarkup(inline_keyboard=[
             [InlineKeyboardButton(text="Участвовать", callback_data=f"join:{self.id}")] ##
         ]) 
-        print("Вызвана рассылка")
-        for tg_id in list_tg_id:
-            if tg_id and tg_id!="-1" and tg_id!=-1:                
-                try:
-                    await message.copy_to(
-                        chat_id=tg_id
-                    )
-                    await bot.send_message(
-                        chat_id= tg_id, text= f"Новое мепроприятие:\n<{self.name}> \nВ <{self.date}:{self.time}>",
-                        reply_markup=event_joining
-                    )
-                except Exception as e:
-                    await log_error_w_sending(cur_id=tg_id, error=e)
+
+        await send_for_all_func(
+            message=message,
+            markup=event_joining,
+            flag=True,
+            text=f"🎉 Новое мероприятие!📅 Название: <b>{self.name}</b>\n🕒 Время: {self.date} {self.time}\nНе упусти возможность присоединиться! Если ты хочешь получать уведомления об этом мероприятии, нажми на кнопку ниже:",                        
+        )
+            
     
     async def send_to_followers(self,text: str):   
         print(self.joined_users_id)

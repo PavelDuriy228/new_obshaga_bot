@@ -4,7 +4,7 @@ from db import (
     update_value, get_rows_by_condition,
     get_all_if
 )
-from keyboards import   total_statistik, start_inl_kbs
+from keyboards import  start_inl_kbs
 from other_func import sort_list0
 from aiogram.types import  CallbackQuery
 
@@ -33,18 +33,19 @@ async def star_statistika (callback: CallbackQuery):
         table="Just_users", condition_column="unic_kod_strtsi",
         condition_value=unic_code
     )
-    print(f'\nusers\n{users}\n')
+    #print(f'\nusers\n{users}\n')
     text = await sort_list0(users=users)
     markup = start_inl_kbs(unic_code=unic_code)    
     n_markup = await markup.home_star()
     await callback.message.edit_text(
         text = text,
-        reply_markup=n_markup
+        reply_markup=n_markup,
+        parse_mode="html"
     )
-    await callback.message.answer(
-        text="Нажмите, чтобы посмотреть полную статистику",
-        reply_markup=total_statistik
-    )
+    # await callback.message.answer(
+    #     text="Нажмите, чтобы посмотреть полную статистику",
+    #     reply_markup=total_statistik
+    # )
 
 @router.callback_query(lambda c: c.data.startswith("urls_my_studs:"))
 async def star_statistika (callback: CallbackQuery):    

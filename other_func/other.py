@@ -1,6 +1,9 @@
 from other_func import checking_time
 from rapidfuzz import  process
+from random import choice
 from db import get_all, get_row_by_condition
+from texts import spam_messages
+from .adm_sup import send_for_all_func
 
 async def splitter_time(date):
     print(date)
@@ -24,3 +27,9 @@ async def search(query:str):
         condition_value=best_match[0]
     )
     return id[0]
+
+async def sending_spam():        
+    mess = choice(spam_messages)
+    await send_for_all_func(
+        text=mess
+    )

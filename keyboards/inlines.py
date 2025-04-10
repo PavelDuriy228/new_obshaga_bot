@@ -7,7 +7,8 @@ adm_menu_markup = InlineKeyboardMarkup(inline_keyboard=[
         InlineKeyboardButton(text="Изменение старост", callback_data="edit_starst")
     ],
     [InlineKeyboardButton(text="📈Статистка", callback_data="adm_statistik")],
-    [InlineKeyboardButton(text="Ссылки для старост", callback_data="stars_urls:0")]
+    [InlineKeyboardButton(text="Ссылки для старост", callback_data="stars_urls:0")],
+    [InlineKeyboardButton(text="Сделать рассылку", callback_data="send_for_all")]
 ])
 
 edit_strst = InlineKeyboardMarkup(inline_keyboard=[
@@ -18,11 +19,6 @@ edit_strst = InlineKeyboardMarkup(inline_keyboard=[
 
 home_admin = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="🏠Домой", callback_data="adm_menu")]
-])
-
-total_statistik = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="🔝Топ студентов", callback_data="full_statik:0")],
-    [InlineKeyboardButton(text="Посмотреть по этажам", callback_data="choise_etag")]
 ])
 
 eventor_markup = InlineKeyboardMarkup(inline_keyboard=[
@@ -73,7 +69,8 @@ async def etagi_inl(
     id_etag:list[int]
 )->InlineKeyboardMarkup:
     keyboard = [
-        [InlineKeyboardButton(text="🔝Топ студентов", callback_data="full_statik:0")],
+        # [InlineKeyboardButton(text="🔝Топ студентов", callback_data="full_statik:0")],
+        [InlineKeyboardButton(text="Назад", callback_data="user_menu")],
         # последний флаг 25  предназначен для простых пользователей
         [InlineKeyboardButton(text=f"{etagi[0]}", callback_data=f"view_studs:{id_etag[0]}:0:0")]
     ]
@@ -91,3 +88,24 @@ async def etagi_inl(
         inline_keyboard=keyboard
     )
     return markup
+
+text_for_button = "Связаться"
+
+studsovet_urls = [    
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/id873206802")],
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/moncherej") ],
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/artleiven")],    # malika
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/sashapinegina")],# Pinegina
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/guli_cat")], # Gulia
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/alexey12359")], # lesha J    
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/holidayco")], # Байрам    
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/i_alok_akok")], # Байрам
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/i.a.hildebrandt")], # Ilia
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/didomoon")], # Didar
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/lumifluxxx")],    # Djelil
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/oxyjenium")], # Jeny
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/hashirra")], # Ivan
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/anichurd")],# Leny
+    [InlineKeyboardButton(text=text_for_button, url= "https://vk.com/idsainsanya")] # Sasha
+]
+

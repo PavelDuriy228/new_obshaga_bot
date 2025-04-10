@@ -35,3 +35,6 @@ class SearchName(StatesGroup):
 
 class ForLaplas(StatesGroup):
     values = State()
+
+class ForSending(StatesGroup):
+    message = State()

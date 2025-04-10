@@ -12,7 +12,7 @@ async def viewer_studs(callback: CallbackQuery):
     index=int(cortege[2])
     # index юзера в общем списке
     page = int(cortege[3])
-    print(f"unic_code: {unic_code} \npage: {page}, \nindex: {index}")
+    # print(f"unic_code: {unic_code} \npage: {page}, \nindex: {index}")
     # Список всех студентов старосты
     studnts = await get_all_if(
         table="Just_users",
@@ -25,7 +25,7 @@ async def viewer_studs(callback: CallbackQuery):
         unic_kod=None, name=studnts[index],
         tg_user_id=None
     )
-    text = f"{user.name}\nБаллы:{user.count_b}\n\nИстория:{user.comment}"
+    text = f"{user.name}\nБаллы:{user.count_b}\n\nИстория:\n\n{user.comment}"
 
     keyboard = []
     if callback_name == "my_students":
@@ -63,4 +63,7 @@ async def viewer_studs(callback: CallbackQuery):
     
     serfing = InlineKeyboardMarkup(inline_keyboard=keyboard)
 
-    await callback.message.edit_text(text=text, reply_markup=serfing)
+    await callback.message.edit_text(
+        text=text, reply_markup=serfing,
+        parse_mode="html"
+    )

@@ -8,7 +8,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 load_dotenv(find_dotenv(), override=True)
 
-Bot_token= os.getenv('token_test') # token_test token_master
+Bot_token= os.getenv('token_master') # token_test token_master
 
 
 # Получение ссылки на google таблицу
@@ -18,9 +18,10 @@ sheet_url_old = os.getenv('old_google_table')
 gc = service_account(filename="api_for_google_sheet.json")
 
 # Пока нет новой ссылки
-wks = gc.open("🔞Аттестация 2 2025/2025")
-wks2 = gc.open(" 🔞 Аттестация 1 2024/2025")
+wks0 = gc.open("🔞Аттестация 2 2025/2025")
+wks1 = gc.open(" 🔞 Аттестация 1 2024/2025")
 
+wks_list = ( wks1, wks0)
 
 if Bot_token is None:
     raise ValueError("Токен бота не найден. Убедитесь, что переменная окружения 'token_test' установлена.")
@@ -30,8 +31,9 @@ storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 
 user_id_adm = os.getenv('user_id_adm') 
+user_id_adm2 = os.getenv('username_adm2') 
 user_id_eventor = os.getenv('user_id_eventor')
-username_bota = os.getenv('name_test')  #  name_master name_test
+username_bota = os.getenv('name_master')  #  name_master name_test
 
 current_dir= os.path.dirname(os.path.abspath(__file__))
 def get_db_connection():

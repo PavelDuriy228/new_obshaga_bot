@@ -4,9 +4,9 @@ from aiogram.fsm.context import FSMContext  # Импортируйте FSMContex
 from db import (
     create_code, create_new_user, get_all
 )
-from keyboards import adm_menu_markup, home_admin, total_statistik
-from FSMs import StateName
-from other_func import checking_starst
+from keyboards import adm_menu_markup, home_admin
+from FSMs import StateName, ForSending
+from other_func import checking_starst,  send_for_all_func
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 router = Router()
@@ -59,13 +59,14 @@ async def statistika_adm (callback : CallbackQuery):
     for item in starosts:
         text+= f"{i}. {item}\n"
         i+=1
+    users = await get_all(
+        table="Users",
+        column="tg_username"
+    )
+    text += f"\nОхват составляет: {len(users)}"
     await callback.message.edit_text(
         text = text,
         reply_markup=home_admin
-    )
-    await callback.message.answer(
-        text = "Нажмите на кнопку ниже, чтобы посмотреть топ студентов по баллам",
-        reply_markup=total_statistik
     )
 
 @router.callback_query(lambda c: c.data.startswith("stars_urls:"))
@@ -102,3 +103,23 @@ async def links_stars (callback : CallbackQuery):
         text=text,
         reply_markup= serfing
     )
+
+@router.callback_query(lambda c: c.data == "send_for_all")
+async def adm_sending(callback: CallbackQuery, state: FSMContext):
+    await state.set_state(ForSending.message)
+    await callback.message.edit_text(
+        text = "Напшите сообщение или просто отправьте картинку для рассылки",
+        reply_markup=home_admin
+    )
+
+@router.message(ForSending.message)
+async def adm_sending(message: Message, state: FSMContext):
+    await send_for_all_func(
+        message=message
+    )
+
+    await message.answer(
+        text="Сообщение отправлено всем юзерам",
+        reply_markup=home_admin
+    )
+    await state.clear()

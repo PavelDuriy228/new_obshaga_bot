@@ -1,4 +1,4 @@
-from aiogram import  Router
+from aiogram import  Router, types
 from db import (
     get_rows_for_statik
 )
@@ -31,6 +31,9 @@ async def statistika (callback: CallbackQuery):
         page=page, range=50
     )
     if strelki: keyboard.append(strelki)
+    keyboard.append(
+        [types.InlineKeyboardButton(text="Назад", callback_data=f'choise_etag')]  
+    )
     
     serfing = InlineKeyboardMarkup(inline_keyboard=keyboard)
 

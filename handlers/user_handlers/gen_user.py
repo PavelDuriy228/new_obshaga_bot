@@ -1,7 +1,6 @@
 from aiogram import  Router
-from keyboards import total_statistik, start_inl_kbs
 from aiogram.types import CallbackQuery, InlineKeyboardMarkup,InlineKeyboardButton
-from db import get_row_by_condition, User
+from db import User
 
 router = Router()
 
@@ -9,10 +8,8 @@ router = Router()
 async def home_page_user (callback: CallbackQuery):
     cur_user_id = callback.from_user.id
     keyboard = InlineKeyboardMarkup(inline_keyboard=[            
-            [InlineKeyboardButton(text="Мои мепрориятия", callback_data=f"users_events:{cur_user_id}:0")]
-        ])
-    unic_code =int(callback.data.split(":")[1])
-    user = User()
+            [InlineKeyboardButton(text="Мои мероприятия", callback_data=f"users_events:{cur_user_id}:0")]
+        ])    
     await callback.message.edit_text(
         text= "Меню действий",
         reply_markup= keyboard

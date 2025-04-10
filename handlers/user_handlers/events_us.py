@@ -45,7 +45,7 @@ async def joining (callback: CallbackQuery):
     page= int(callback.data.split(":")[2])    
     keyboard = []
     keyboard.append(
-        [InlineKeyboardButton(text="🏠Домой", callback_data=f"home_stud:{id}")]
+        [InlineKeyboardButton(text="🏠Домой", callback_data="user_menu")]
     )    
 
     if event_codes !="None": list_id = [code.strip() for code in event_codes.split(" ") if code != ""]  
