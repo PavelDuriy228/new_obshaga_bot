@@ -1,4 +1,5 @@
 api_for_google_sheet.json
+app.log
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
