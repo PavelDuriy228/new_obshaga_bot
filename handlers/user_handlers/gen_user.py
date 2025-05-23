@@ -1,5 +1,8 @@
 from aiogram import  Router
-from aiogram.types import CallbackQuery, InlineKeyboardMarkup,InlineKeyboardButton
+from aiogram.types import CallbackQuery, InlineKeyboardMarkup,InlineKeyboardButton, Message
+from aiogram.fsm.context import FSMContext
+from FSMs import RepProblem
+from other_func import send_to_adms
 from db import User
 
 router = Router()
@@ -14,6 +17,31 @@ async def home_page_user (callback: CallbackQuery):
         text= "Меню действий",
         reply_markup= keyboard
     )    
+
+@router.callback_query(lambda c: c.data == "report_prob")
+async def report_handler(callback: CallbackQuery, state: FSMContext):
+    markup = InlineKeyboardMarkup(inline_keyboard=[        
+        [InlineKeyboardButton(text="Назад", callback_data="user_menu")]
+    ])
+    await state.set_state(RepProblem.problem)
+
+    await callback.message.edit_text(
+        text="Напшите о проблеме которая у вас возникла",
+        reply_markup=markup
+    )    
+
+@router.message(RepProblem.problem)
+async def rep_problem2(message:Message, state: FSMContext):
+    await state.clear()
+    await send_to_adms(message=message)
+    markup = InlineKeyboardMarkup(inline_keyboard=[        
+        [InlineKeyboardButton(text="Назад", callback_data="user_menu")]
+    ])
+    await message.answer(
+        text= "Ваше сообщение было отпарвлено администраторам",
+        reply_markup=markup
+    )
+
 
 # @router.callback_query(lambda c: c.data.startswith("u_statistik:"))
 # async def statistika_stud (callback: CallbackQuery):

@@ -38,3 +38,6 @@ class ForLaplas(StatesGroup):
 
 class ForSending(StatesGroup):
     message = State()
+
+class RepProblem(StatesGroup):
+    problem = State()

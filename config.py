@@ -31,6 +31,7 @@ storage = MemoryStorage()
 dp = Dispatcher(storage=storage)
 
 user_id_adm = os.getenv('user_id_adm') 
+user_id_adm22 = os.getenv('user_id_adm2') 
 user_id_adm2 = os.getenv('username_adm2') 
 user_id_eventor = os.getenv('user_id_eventor')
 username_bota = os.getenv('name_master')  #  name_master name_test

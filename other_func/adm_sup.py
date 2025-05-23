@@ -1,6 +1,6 @@
 from aiogram.types import Message, InlineKeyboardMarkup
 from db import get_all
-from config import bot
+from config import bot, user_id_adm22, user_id_adm
 from loggers.logs1 import log_error_w_sending
 import re
 
@@ -39,3 +39,16 @@ async def send_for_all_func (
                         )
                 except Exception as e:
                     await log_error_w_sending(cur_id=tg_id, error=e)
+
+# функция рассылки админам
+async def send_to_adms(
+    message: Message
+):
+    adms = (user_id_adm, user_id_adm22)
+    for adm_id in adms:
+        try:
+            await message.copy_to(
+                chat_id=adm_id
+            )
+        except Exception as e:
+                    await log_error_w_sending(cur_id=adm_id, error=e)

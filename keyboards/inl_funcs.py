@@ -5,6 +5,7 @@ async def menu_keyboard(tg_id:int, flag: bool = False) -> list[InlineKeyboardBut
         [InlineKeyboardButton(text="Мои мероприятия", callback_data=f"start_event:{tg_id}")],
         [InlineKeyboardButton(text="Посмотреть по этажам", callback_data="choise_etag")],
         [InlineKeyboardButton(text="Студсовет", callback_data=f"studsovet:0:0")],    
+        [InlineKeyboardButton(text="Сообщить о проблеме", callback_data=f"report_prob")],    
     ]
     if flag:
         return InlineKeyboardMarkup(inline_keyboard=keyboard)
